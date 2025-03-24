@@ -1,94 +1,138 @@
-const students = ['Jonas', 'Petras', 'Petras', 'Ona' ];
-console.log(students);
 
 
-const luckynumbers = [9,8,9,8,9,8];
-const firstNumbers = luckynumbers[0];
 
-console.log(firstNumbers);
+console.log('-------------------------------------------------------------------------');
+
+
+/*
+ARRAY - sąrašas, Arėjus, matrica, masyvas, list'as, rinkinys
+*/
 
 const empty = [];
 console.log(empty);
+console.log(empty[0]);
+
+const luckyNumbers = [7, 777, 13, 666, 8, 2];
+console.log(luckyNumbers);
+
+const students = ['Jonas', 'Maryte', 'Petras', 'Ona'];
+console.log(students);
+
+const firstNumber = luckyNumbers[0];
+console.log(firstNumber);
+
+console.log(luckyNumbers[0]);
+console.log(luckyNumbers[1]);
+console.log(luckyNumbers[2]);
+console.log(luckyNumbers[3]);
+console.log(luckyNumbers[4]);
+console.log(luckyNumbers[5]);
+console.log(luckyNumbers[6]);
+console.log(luckyNumbers[7]);
+
+console.log(students);
+console.log(students[0]);
+console.log(students[1]);
+console.log(students[2]);
+console.log(students[3]);
+console.log(students[4]);
+console.log(students[5]);
+console.log(students[-1]);
 
 console.log(empty.length);
-console.log(luckynumbers.length);
+console.log(luckyNumbers.length);
 console.log(students.length);
 
-const numbers = [10,2,8,4,6];
+console.clear();
+
+const numbers = [10, 2, 8, 4, 6];
 
 const totalSum1 = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4];
 console.log(totalSum1);
 
 let totalSum2 = 0;
-totalSum2 = totalSum2 + numbers[0]
 totalSum2 = totalSum2 + numbers[0];
-totalSum2 = totalSum2 + numbers[0];
-totalSum2 = totalSum2 + numbers[0];
-totalSum2 = totalSum2 + numbers[0];
-totalSum2 = totalSum2 + numbers[0];
+totalSum2 = totalSum2 + numbers[1];
+totalSum2 = totalSum2 + numbers[2];
+totalSum2 = totalSum2 + numbers[3];
+totalSum2 = totalSum2 + numbers[4];
+console.log(totalSum2);
 
 let totalSum3 = 0;
-totalSum3 += numbers
+totalSum3 += numbers[0];
+totalSum3 += numbers[1];
+totalSum3 += numbers[2];
+totalSum3 += numbers[3];
+totalSum3 += numbers[4];
+console.log(totalSum3);
 
+const dictionary = ['pomidoras', 'agurkas', 'bulve', 'kefyras', 'druska', 'svogunu laiskai', 'lasiniai'];
 
-
-
-
-
-
-const vardai = ['a', 'b' , 'c']
-
-const dictionary = ['pomidoras', 'agurkas', 'bulve', 'kefyras', 'druska', 'svogunu laiskai', 'lasiniai']
-
-//patiekalui reikes a, b , c, d. 
-
-const sentence1 = 'patiekalui reikes: ' + dictionary[0] + ", " + dictionary[1] + ', ' + dictionary[2] + ', ' + dictionary[3] + ', ' + dictionary[4] + ', ' + dictionary[5] + ', ' + dictionary[6] + '. '
-
+// Patiekalui reikes: a, b, c, d.
+const sentence1 = 'Patiekalui reikes: ' + dictionary[0] + ', ' + dictionary[1] + ', ' + dictionary[2] + ', ' + dictionary[3] + ', ' + dictionary[4] + ', ' + dictionary[5] + ', ' + dictionary[6] + '.';
 console.log(sentence1);
 
-
-let sentence2 = 'patiekalui reikes: ';
-sentence2 = sentence2 + dictionary[0];
-sentence2 = sentence2 + ', ';
-sentence2 = sentence2 + dictionary[1];
-sentence2 = sentence2 + ', ';
-sentence2 = sentence2 + dictionary[2];
-sentence2 = sentence2 + ', ';
-sentence2 = sentence2 + dictionary[3];
-sentence2 = sentence2 + ', ';
-sentence2 = sentence2 + dictionary[4];
-sentence2 = sentence2 + ', ';
-sentence2 = sentence2 + dictionary[5];
-sentence2 = sentence2 + ', ';
-sentence2 = sentence2 + dictionary[6];
-sentence2 = sentence2 + '.';
+let sentence2 = 'Patiekalui reikes: ';
+sentence2 += dictionary[0] + ', ';
+sentence2 += dictionary[1] + ', ';
+sentence2 += dictionary[2] + ', ';
+sentence2 += dictionary[3] + ', ';
+sentence2 += dictionary[4] + ', ';
+sentence2 += dictionary[5] + ', ';
+sentence2 += dictionary[6] + '.';
 console.log(sentence2);
 
+console.clear();
 
-
-let sentence3 = 'patiekalui reikes: ';
-sentence3 += sentence3 + dictionary[0];
-sentence3 += sentence3 + ', ';
-sentence3 += sentence3 + dictionary[1];
-sentence3 += sentence3 + ', ';
-sentence3 += sentence3 + dictionary[3];
-sentence3 += sentence3 + ', ';
-sentence3 += sentence3 + dictionary[3];
-sentence3 += sentence3 + ', ';
-sentence3 += sentence3 + dictionary[4];
-sentence3 += sentence3 + ', ';
-sentence3 += sentence3 + dictionary[5];
-sentence3 += sentence3 + ', ';
-sentence3 += sentence3 + dictionary[6];
-sentence3 += sentence3 + '.';
-console.log(sentence3);
-
-sentence3 +=  dictionary[0] + ', ';
-
-//let index = index + 1;
 let index = 0;
-sentence += dictionary[index] + ', ';
+let sentence3 = 'Patiekalui reikes: ';
+
+sentence3 += dictionary[index] + ', ';
+
 index += 1;
+sentence3 += dictionary[index] + ', ';
 
+index += 1;
+sentence3 += dictionary[index] + ', ';
 
+index += 1;
+sentence3 += dictionary[index] + ', ';
+
+index += 1;
+sentence3 += dictionary[index] + ', ';
+
+index += 1;
+sentence3 += dictionary[index] + ', ';
+
+index += 1;
+sentence3 += dictionary[index] + '.';
 console.log(sentence3);
+
+let k = 0;
+k = k + 1;
+k += 1;
+k++;
+++k;
+
+let i = 0;
+let sentence4 = 'Patiekalui reikes: ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + ', ';
+sentence4 += dictionary[i++] + '.';
+console.log(sentence4);
+
+let j = -1;
+let sentence5 = '++ Patiekalui reikes: ';
+sentence5 += dictionary[++j] + ', ';
+sentence5 += dictionary[++j] + ', ';
+sentence5 += dictionary[++j] + ', ';
+sentence5 += dictionary[++j] + ', ';
+sentence5 += dictionary[++j] + ', ';
+sentence5 += dictionary[++j] + ', ';
+sentence5 += dictionary[++j] + '.';
+console.log(sentence5);
+
