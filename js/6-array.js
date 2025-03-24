@@ -136,3 +136,4 @@ sentence5 += dictionary[++j] + ', ';
 sentence5 += dictionary[++j] + '.';
 console.log(sentence5);
 
+console.log('awdawdawawd');
