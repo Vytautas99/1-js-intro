@@ -1,0 +1,27 @@
+{
+  "name": "1-js-intro",
+  "version": "1.0.0",
+  "description": "pirmasis projektas apie JS (Javascript)",
+  "main": "index.js",
+  "scripts": {
+    "number": "node --watch ./js/1-number.js",
+    "array": "node --watch ./js/6-array.js",
+    "naujas": "node --watch ./js/naujas.js",
+    "naujas2": "node --watch ./js/naujas2.js",
+    "if": "node --watch ./js/5-if.js",
+    "boolean": "node --watch ./js/4-boolean.js",
+    "function": "node --watch ./js/3-function.js",
+    "string": "node --watch ./js/2-string.js",
+    "workshop": "node --watch ./js/workshop.js",
+    "workshop2": "node --watch ./js/workshop2.js",
+    "js": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "code",
+    "kebabas"
+  ],
+  "author": "Vytautas",
+  "license": "ISC"
+}
