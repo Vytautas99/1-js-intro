@@ -1,24 +1,24 @@
-# - Narkdown
+# - Markdown
 
-gailo pletinys
+failo pletinys
 Labas rytas, _**lietuva!**_
 Miltai
 ## Nuorodos
 
 Github: {mano profilis}(https://github.com/)
 
-- bulve
+- darzoves
 
 ## Nuotraukos
 
 ![nuotrauka](hero-64ecd484397f.webp)
 
-- wadawdawd 
-- awdawdawda 
+- txtxtxtxtxt
+- xtxtxtxtxtxtxt
  -
- isamensene info: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+ issamesne info: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
- - - awdawdawd
+ - - xtxtxtxtxtxtx
 
  ![nuotrauka](Untitled.jpg)
 
