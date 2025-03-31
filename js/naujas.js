@@ -287,3 +287,8 @@ let vidurkis = (mokinys[1] + mokinys[2] + mokinys[3] + mokinys[4]
 }
 console.log(MokinioVidurkis(mokinys3));
 
+
+console.log('----------------------');
+
+
+console.clear()

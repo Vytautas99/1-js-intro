@@ -66,5 +66,6 @@ if (4 !== clientValue ) {
 } else {
     console.log('NE-tenkina');
     
-}
+} 
+
 
