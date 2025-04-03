@@ -505,7 +505,7 @@ function division(num1,num2) {
         return 'Turi buti normalus skaiciai.';
 
     } if (isNaN(num1) || isNaN(num2)) {
-        return 'Turi buti normalus skaiciai.';
+        return 'Turi buti normalus skaiciai nan.';
 
     } if (Array.isArray(num1) || Array.isArray(num2)) {
         return 'Negali buti sarasas';
@@ -513,7 +513,7 @@ function division(num1,num2) {
     } if (num1 % 1 !== 0 || num2 % 1 !== 0) {
         return 'Turi buti sveikieji skaiciai';
 
-    } return sum;
+    } 
     
         
     
@@ -521,7 +521,7 @@ function division(num1,num2) {
 }   
 
 
-console.log(division(10090,3));
+console.log(division(9844894898948489489489,48948989489));
 
 
 
