@@ -492,3 +492,4 @@ function daugyba(number) {
 }
 
 console.log(daugyba(9));
+

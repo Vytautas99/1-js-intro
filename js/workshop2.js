@@ -24,19 +24,22 @@ function citiesDistance(speed,hours) {
           
           const city = cities[i];
           const distance = cities[i+1];
-
-       if (multiplyResult < distance ) {
-
-           return `Per ${hours} valandas vaziuodami ${speed} km/h greiciu toliausiai nuvaziuosite iki "${cities[i]}" miesto.`
+          const bigNum = 362;
+       if (multiplyResult < bigNum || multiplyResult < distance ) {
+            
+           return `Per ${hours} valanda/s vaziuodami ${speed} km/h greiciu toliausiai nuvaziuosite iki "${city }" miesto.`
            
        }
        
         
        } 
    } 
+   
+
+   console.log(citiesDistance(70,3));
+
 
  //return `Per ${hours} valandas vaziuodami ${speed} km/h greiciu toliausiai nuvaziuosite iki "${city}//" miesto.`
-   console.log(citiesDistance(70,2));
 
    
 console.log('-------');
@@ -255,3 +258,27 @@ function reverseSeq3 (n) {
   
   console.log(getSum(-1,2));
   
+
+console.clear()
+  // 2. Parašyti funkciją, kuri apskaičiuotų kiek sveikųjų teigiamų skaičių sąraše yra tam tikrų
+// skaičių ir išvestų resultatą grafiškai. PVZ: turint sąrašą [1, 1, 2, 3, 3, 3, 4] rezultatas
+// būtų gaunamas toks: 1: ** ; 2: * ; 3: ***; 4: * 
+
+
+const nums = [1, 1, 2, 3, 3, 3, 4];
+
+function integerNum () {
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === i) {
+      console.log(i);
+      
+    }
+    
+  }
+
+
+}
+
+const result = nums.filter(() => nums.length > 6);
+

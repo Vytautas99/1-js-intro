@@ -401,9 +401,16 @@ const Array9 = [2, 5, 2, 4,2]
 
 // 10. Patikrinkite, ar masyve yra daugiau nei 3 to paties skaičiaus elementai.
 
-//const Array10 =  [2, 2, 2, 2, 2, 5, 6]
+const Array10 =  [2, 2, 2, 2, 2, 5, 6]
 
-
+for (let i = 0; i < Array10.length; i++) {
+    if (Array10[i] === i) {
+        console.log(i);
+        
+    }
+   
+    
+}
 
 /*
 
@@ -758,9 +765,8 @@ console.log('----------------');
 
 // 9. Sukurkite funkciją, kuri tikrina, ar teksto tipo kintamasis prasideda raide 'a'.
 
-function name(params) {
+function name(params) {}
     
-}
 
 console.log('----------------');
 

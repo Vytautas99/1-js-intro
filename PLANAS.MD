@@ -6,8 +6,8 @@
     - ~~logines reiksmes (boolean)~~
     - sarasas ( array)
     - objektas (object)
-    - null
-    - undefined
+    - null (reiskme neegzistuoja. bet mes ketiname ja gauti/paskaiciuoti)
+    - undefined (reiksme neegzisutoja, kai kreipiesi i atminti ir joje nera duomens)
 -   funkcijos (perpanaudojamas kodo blokas, logika):
     - ~~"paprasta"~~
     -  rodykline
