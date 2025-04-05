@@ -877,3 +877,6 @@ const pusher = numbsea.push(4,0,0,)
  
 
  array.filter(Boolean)
+
+
+ //dad
