@@ -14,3 +14,5 @@ console.log(validName('jonas'), '----->', 'Jonas');
 console.log(validName('marYTE'), '----->', 'Maryte');
 console.log(validName('PeTrAs'), '----->', 'Petras');
 console.log(validName('ONA'), '----->', 'Ona');
+
+

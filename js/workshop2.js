@@ -282,3 +282,7 @@ function integerNum () {
 
 const result = nums.filter(() => nums.length > 6);
 
+let newtest = "The-stealth-warrior";
+
+ const firstWord = newtest.replace(0,'adwd')
+console.log(firstWord);

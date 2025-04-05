@@ -277,6 +277,374 @@ const name = a1 + b2;
 
 console.log(name);
 
+
+ 
+    
+      
+
+
+ 
+
+
+
+
+
+console.log(calculate(3,'/',0));
+
+
+
+function calculate(num1, operation, num2) {
+    if (operation === '*') {
+          return num1 * num2;
+          
+       } if (operation === '+') {
+           return num1 + num2;
+   
+        } if (operation === '-') {
+            return num1 - num2;
+            
+        } if (operation === '/') {
+           return num1 / num2;
+           
+        } else {
+            return null;
+       }
+       
+       
+       
+       
+    }
+    
+
+    let word1 = '';
+    
+    console.log('------------------------');
+    
+    function correctPolishLetters (string) {
+        
+     let modified = string.replaceAll("ą", "a");
+     let modified1 = modified.replaceAll("ę", "e");
+     let modified2 = modified1.replaceAll("ć", "c");
+     let modified3 = modified2.replaceAll("ł", "l");
+     let modified4 = modified3.replaceAll("ń", "n");
+     let modified5 = modified4.replaceAll("ó", "o");
+     let modified6 = modified5.replaceAll("ś", "s");
+     let modified7 = modified6.replaceAll("ź", "z");
+     let modified8 = modified7.replaceAll("ż", "z");
+     
+     return modified8;
+
+    } 
+    
+    
+
+    
+    console.log(correctPolishLetters("Jędrzej Błądziński"), "Jedrzej Bladzinski");
+    console.log(correctPolishLetters("Lech Wałęsa"), "Lech Walesa");
+    console.log(correctPolishLetters("Maria Skłodowska-Curie"), "Maria Sklodowska-Curie");
+    
+    
+    console.log('------------------------');
+    
+    function strCount(str, letter){  
+        
+        {
+            
+        }
+    }
+
+    
+    console.log(strCount('hello','o'));
+    
+    
+    
+    
+    
+    console.log('------------------------');
+    
+    console.log(strCount('gucci',''));
+    console.log('------------------------');
+    const adad = 'awdawdaaw'
+    let awdad = adad.split('a');
+    
+    
+    console.log(awdad.length);
+    
+    
+    
+    console.log('------------------------');
+    
+    
+    
+    
+    function findDuplicateCharacterCount(str,letter) {
+        
+        let count = 0;
+        
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === letter) {
+                count+=1 // = count +=1
+        }
+    }
+
+    return count;
+}
+
+
+console.log(findDuplicateCharacterCount('hello','l'));
+
+
+console.clear()
+
+console.log('---------------');
+
+function getDrinkByProfession(param){
+    
+    const word = param.toLowerCase();
+    if (word === "jabroni") {
+        return "Patron Tequila";
+    } if (word === "School Counselor") {
+        return "Anything with Alcohol";
+    } if (word === "Programmer") {
+        return "Hipster Craft Beer";
+    } if (word === "Bike Gang Member") {
+        return "Moonshine";
+    } if (word === "Politician") {
+        return "Your tax dollars";
+    } if (word === "Rapper") {
+        return "Cristal";
+    } else {
+        return "Beer";
+    }
+    
+    
+    
+    
+    
+}
+
+console.log(getDrinkByProfession("jabrOni"), "Patron Tequila", "'Jabroni' should map to 'Patron Tequila'");
+console.log(getDrinkByProfession("scHOOl counselor"), "Anything with Alcohol", "'School Counselor' should map to 'Anything with alcohol'");
+console.log(getDrinkByProfession("prOgramMer"), "Hipster Craft Beer", "'Programmer' should map to 'Hipster Craft Beer'");
+console.log(getDrinkByProfession("bike ganG member"), "Moonshine", "'Bike Gang Member' should map to 'Moonshine'");
+console.log(getDrinkByProfession("poLiTiCian"), "Your tax dollars", "'Politician' should map to 'Your tax dollars'");
+console.log(getDrinkByProfession("rapper"), "Cristal", "'Rapper' should map to 'Cristal'");
+console.log(getDrinkByProfession("pundit"), "Beer", "'Pundit' should map to 'Beer'");
+console.log(getDrinkByProfession("Pug"), "Beer", "'Pug' should map to 'Beer'");
+
+
+
+//function validName(name) {
+    //const firstLetter = name[0].toUpperCase();
+    //const restLetters = name.slice(1).toLowerCase();
+    
+   // return firstLetter + restLetters;
+   
+   
+   
+   
+   
+   
+   //For this game of BINGO, you will receive a single array of 10 numbers from 1 to 26 as an input. Duplicate numbers within the array are possible.
+   
+   //Each number corresponds to their alphabetical order letter (e.g. 1 = A. 2 = B, etc). Write a function where you will win the game if your numbers can spell "BINGO". They do not need to be in the right order in the input array. Otherwise you will lose. Your outputs should be "WIN" or "LOSE" respectively.
+   
+   
+   function disemvowel(str) {
+       const newStr = str.replaceAll('a','' );
+  const newStr1 = newStr.replaceAll('e','' );
+  const newStr2 = newStr1.replaceAll('i','' );
+  const newStr3 = newStr2.replaceAll('o','' );
+  const newStr4 = newStr3.replaceAll('u','' );
+  const newStr5 = newStr4.replaceAll('A','' );
+  const newStr6 = newStr5.replaceAll('E','' );
+  const newStr7 = newStr6.replaceAll('I','' );
+  const newStr8 = newStr7.replaceAll('O','' );
+  const newStr9 = newStr8.replaceAll('U','' );
+  return newStr9;
+}
+
+console.log(disemvowel("This website is for losers LOL!" ));
+
+
+//a, e, i, o, u
+
+/*
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+
+*/
+function reverseWords(str){
+    let text = '';
+    
+    for (let a = 5 - 1; a >= str.length; a--) {  
+        text += str[i]
+        
+        
+    } return text;
+} 
+
+
+console.log(reverseWords("hello world!"))
+
+console.log('---------------------------------');
+/*
+Write a function that takes a positive integer n, sums all the cubed values from 1 to n (inclusive), and returns that sum.
+
+Assume that the input n will always be a positive integer.
+
+Examples: (Input --> output)
+
+2 --> 9 (sum of the cubes of 1 and 2 is 1 + 8)
+3 --> 36 (sum of the cubes of 1, 2, and 3 is 1 + 8 + 27)
+
+*/
+
+
+
+function sumCubes(n){
+    
+    sum = 0;
+    for (let a = 1 ; a  <= n; a++) {  
+       
+        sum += a**3  
+        
+  } return sum
+  
+}
+console.log(sumCubes(123));
+console.clear()
+console.log('---------------------------------');
+
+
+
+/*
+Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
+Examples
+
+"the-stealth-warrior" gets converted to "theStealthWarrior"
+
+"The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+"The_Stealth-Warrior" gets converted to "TheStealthWarrior"
+*/
+
+function toCamelCase(str){
+    
+    const newS = str.toLowerCase()
+    
+    const firstLetter = newS.charAt(0)
+    
+    const firstLetterUppercase = firstLetter.toUpperCase()
+    
+    let newtest = "The-stealth-warrior";
+    
+    const firstWord = newtest.replace(0,'adwd')
+    console.log(firstWord);
+    
+    
+    
+    //dashUnderscore = str.split('_')
+    
+    //const cameCase = 0;
+    
+    const replace = str.replaceAll('-','*').replaceAll('_','*');
+    const upCase = replace.indexOf('*')+1;
+    const lastIndex = replace.lastIndexOf('*')+1;
+
+    const gucci = replace.charAt(lastIndex).toUpperCase() 
+    
+    
+    console.log(gucci);
+    
+    
+    
+    //console.log(lastIndex.toUpperCase())
+    
+    //console.log(cameCase);
+    
+    
+    console.log(lastIndex);
+    console.log(upCase);
+    
+    
+    if (firstLetter === firstLetterUppercase) {
+        return true 
+        
+    } else {
+        return false
+    }
+    
+    
+    
+    
+    
+}
+
+
+/*
+ function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+
+
+console.log(toCamelCase("the-stealth_warrior"));
+
+
+
+//const newtest = "the-stealth-warrior";
+
+//const firstWord = newtest.replace(0,gucci)
+//console.log(firstWord);
+
+
+
+
+console.log('----------')
+
+
+// charAt(0)
+
+// toUpperCase()
+
+
+const hi = 'Labas_rytas-Lietuva!';
+const h2 = 'Labas_rytas-Lietuva!';
+
+const hiNormalSize = hi.slice(1).toLowerCase().replaceAll('-','').replaceAll('_','')
+
+const test = h2.indexOf('_')+1
+
+const test2 = "the-stealth-warrior"
+
+const test3 = test2.charAt(4).toUpperCase()
+console.log('----------');
+
+gucci = test2.indexOf('-')+1
+
+const test4 = test2.lastIndexOf('-')+1
+console.log(test4);
+
+console.log(gucci);
+
+
+console.log('----------');
+console.log(test);
+console.log(test3);
+
+console.log(hiNormalSize);
+
+
+console.log('duona'.split('o'));
+console.log('duona'.split('u'));
+console.log('duona'.split('d'));
+console.log('duona'.split('n'));
+console.log('duona'.split('a'));
+
+*/
+
+
 /*
 Write a function called calculate that takes 3 values. The first and third values are numbers. The second value is a character. If the character is "+" , "-", "*", or "/", the function will return the result of the corresponding mathematical function on the two numbers. If the string is not one of the specified characters, the function should return null (throw an ArgumentException in C#).
 
@@ -292,9 +660,6 @@ Keep in mind, you cannot divide by zero. If an attempt to divide by zero is made
 
 function calculate(num1,operation,num2) {
 
-    //if (num1  === 0 ||  num2 === 0  ) {
-        //return null;
-  // }   
     
     if (operation === '*') {
        return num1 * num2;
@@ -305,134 +670,210 @@ function calculate(num1,operation,num2) {
     } if (operation === '-') {
         return num1 - num2;
 
-    } if (operation === '/') {
-
-       if (num1 === 0 || num2 === 0) {
-        return null;
-
-       } else {
-        return num1 / num2;
-       }
-        
-    } 
-    } 
-        
-    
-       
-    
-    
-
-
- 
-    
-      
-      
-    
- 
-
-    
- 
-
-
-console.log(calculate(3,'/',0));
-
-
-
-function calculate(num1, operation, num2) {
-    if (operation === '*') {
-          return num1 * num2;
-          
-       } if (operation === '+') {
-           return num1 + num2;
-   
-       } if (operation === '-') {
-           return num1 - num2;
-   
-       } if (operation === '/') {
-           return num1 / num2;
-   
-       } else {
-           return null;
-       }
-       
-       
-    
-   
-   }
-
-
-    let word1 = '';
-
-console.log('------------------------');
-
-   function correctPolishLetters (string) {
-
-     let modified = string.replaceAll("ą", "a");
-     let modified1 = modified.replaceAll("ę", "e");
-     let modified2 = modified1.replaceAll("ć", "c");
-     let modified3 = modified2.replaceAll("ł", "l");
-     let modified4 = modified3.replaceAll("ń", "n");
-     let modified5 = modified4.replaceAll("ó", "o");
-     let modified6 = modified5.replaceAll("ś", "s");
-     let modified7 = modified6.replaceAll("ź", "z");
-     let modified8 = modified7.replaceAll("ż", "z");
-   
-    return modified8;
-
-    } 
-  
-
-
-
-console.log(correctPolishLetters("Jędrzej Błądziński"), "Jedrzej Bladzinski");
-console.log(correctPolishLetters("Lech Wałęsa"), "Lech Walesa");
-console.log(correctPolishLetters("Maria Skłodowska-Curie"), "Maria Sklodowska-Curie");
-
-
-console.log('------------------------');
-
-function strCount(str, letter){  
-
-    {
-        
+    } if (operation === '/' && num1 !== 0 && num2 !== 0) {
+          return num1 / num2
+    } else {
+        return null
     }
+
+    } 
+        
+    
+       
+    
+    
+    console.log(calculate(2,"+",4));
+    console.log(calculate(6,"-",1.5));
+    console.log(calculate(-4,"*",8));
+    console.log(calculate(49,"/",-7));
+    console.log(calculate(8,"m",2));
+    console.log(calculate(4,"/",0));
+
+
+
+let items = []
+let newAr = items.push({a: "b", c: "d"})
+
+
+
+console.log(newAr[1]);
+
+
+
+function getMax1()
+{
+  var max = 
+  {
+   name: 'Max Headroom'
+  }
+  return max;
+}
+
+function getMax2()
+{ 
+    var max2 = {
+    name: 'Max Headroom'
+    }
+  
+  {
+   return max2;
+  }
+}
+
+
+console.log(getMax1());
+
+
+
+
+
+function areYouPlayingBanjo(name) {
+    if ( name.startsWith('R') || name.startsWith('r')) {
+      return name + " plays banjo"; 
+    } else {
+  }   return name + " does not play banjo";
+    
   }
 
 
-console.log(strCount('hello','o'));
+
+  const gucci = [9, 2, 0, 7]
+
+  function reverseList(list) {
+    reverse = [];
+    
+    for (i = list.length -1  ; i >= 0; i--) {
+
+        reverse.push(list[i]);
+        
+    }    return reverse;
+  }
 
 
 
+  console.log(reverseList(gucci));
+  console.log(reverseList(gucci));
+  console.log(reverseList(gucci));
 
-
-console.log('------------------------');
-
-console.log(strCount('gucci',''));
-console.log('------------------------');
-const adad = 'awdawdaaw'
-let awdad = adad.split('a');
-
-
-console.log(awdad.length);
-
-
-
-console.log('------------------------');
-
-
-
-
-function findDuplicateCharacters(str) {
-	let result = [];
-	let count = 0;
-
-	for (let i = 0; i < str.length; i++) {
-		for (let j = i + 1; j < str.length; j++) {
-			if (str[i] === str[j]) {
-				result.push(str[i]);
-			}
-		}
-    }
-
-    return result;
+ /* 
+ function reverseList(list) {
+return list.reverse();
 }
+
+*/
+
+
+
+const w =  ['hello', 'world', 'this', 'is', 'great']
+
+function smash (words) {
+  let t = ''
+  t+=words
+  
+  
+    return '' + t.replaceAll(',',' ')
+ };
+
+
+console.log(smash(w));
+
+ 
+
+// return words.join(" ");
+
+
+
+// return num.toString()
+// return String(num);
+//return Number(num);
+// '' + num
+
+
+
+
+
+function countSheeps(sheep) {
+    let sheepC = 0;
+    for (i = 0; i <= sheep.length; i++ ) {
+      
+      if ( sheep[i] === true ) {
+        sheepC++
+    }
+    } return sheepC;
+  } 
+
+
+  const sheeper = [true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  null,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true]
+
+    console.log(countSheeps(sheeper));
+
+
+    function countSheeps(arrayOfSheeps) {
+        return arrayOfSheeps.filter(Boolean).length;
+      }
+    
+
+     // sheep.filter(Boolean).length;
+     
+
+     function getSum(a, b)
+{
+   sum = 0;
+   sum2 = 0;
+    for (let i = b ; i  < a; i++) {  
+      
+        sum = sum + i + i 
+
+  } for (let i = b ; i  < b; i++) {  
+       
+    sum2 = sum2 + i + i
+
+} return sum + sum2;
+}
+ 
+console.log(getSum(-1, 0))
+
+console.log(-1+1);
+
+
+console.log(Number.isInteger(-5));
+
+
+const  numbsea = ([false,0,0,1,2,0,1,3,"a",])
+
+//let gkfkkf = numbsea.replaceAll('0,','')
+//console.log(gkfkkf);
+
+const pusher = numbsea.push(4,0,0,)
+ console.log(pusher);
+ console.log(numbsea);
+ 
+ 
+ 
+
+ function zeroPush (array) {
+    puawdawdasher2 = []
+    count = 0
+    for (let i = array[0]; i <= array.length; i++) {
+        if (i === 0) {
+            count++
+        }
+        
+        
+    } return count;
+
+
+
+ }
+
+
+
+ //console.log(zeroPush(numbsea));
+ 
+
+ array.filter(Boolean)
