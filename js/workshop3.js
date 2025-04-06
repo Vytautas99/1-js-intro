@@ -842,41 +842,187 @@ console.log(-1+1);
 
 
 console.log(Number.isInteger(-5));
+console.log('------------------------------');
 
 
-const  numbsea = ([false,0,0,1,2,0,1,3,"a",])
 
-//let gkfkkf = numbsea.replaceAll('0,','')
+//let gkfkkf = array.replaceAll('0,','')
 //console.log(gkfkkf);
 
-const pusher = numbsea.push(4,0,0,)
- console.log(pusher);
- console.log(numbsea);
- 
- 
+// const pusher = array.push(4,0,0,)
+// console.log(pusher);
+// console.log(array);
  
 
- function zeroPush (array) {
-    puawdawdasher2 = []
-    count = 0
-    for (let i = array[0]; i <= array.length; i++) {
-        if (i === 0) {
+
+const  array1 = [false,0,0,1,2,0,1,3,"a"]
+
+function zeroPush (array) {
+    let i = 0;
+    let count = 0
+    while (i < array.length) {
+        if (array[i] === 0) {
             count++
+            array.splice(i,1)
+        } else {
+
+            i++
         }
-        
-        
+
     } return count;
 
-
-
+    
+      
+       
+    
  }
 
 
 
- //console.log(zeroPush(numbsea));
  
 
- array.filter(Boolean)
+ 
+ 
+ 
+console.log(zeroPush(array1));
+
+//let count = 0;
+    
+    for(i = 0 ; i < array1.length; i++) {
+      if (array1[i] === 0) {
+        array1.splice(i,1);
+      } 
+      
+    }
+    console.log(array1);
+  
+  // Usage
 
 
- //dadgit config --list dadadawd adawdaw 
+
+
+//console.log(array1.replaceAll('0,',''));
+
+let newArr = []
+let gkfkkf = array1.toString().replaceAll('0,',' ')
+console.log(gkfkkf);
+
+ let spliter = gkfkkf.split('0');
+ console.log(spliter);
+ 
+console.log(array1.join('-'))
+
+
+
+ //let repeatedZero = 
+ let anotheArr =  []
+let number2323 = 7
+ let  cloud = array1.join()                      //('0'.repeat(number2323))
+ 
+console.log(cloud);
+
+ //let arr2 = anotheArr.toString().split('');
+
+ //let latestArr = array1.join(cloud)
+ 
+//console.log(latestArr);
+
+
+//console.log(array1.join(cloud).split(''));
+
+
+
+//const array2 = [false, "b", "c"];
+//const array3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+//const array4 = array1.concat(array3);
+
+//console.log(array4);
+
+
+
+
+
+
+
+
+
+//let abc = array1.splice(0,4)
+//console.log(abc)
+
+//console.log(array1);
+
+
+
+
+console.log('--------');
+
+
+let count = 0;
+    
+    for(i = 0 ; i < array1.length; i++) {
+      if (array1[i] === 0) {
+        array1.splice(i,1);
+      } 
+      
+    }
+    console.log(array1);
+  
+  // Usage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //console.log(zeroPush(array));
+ 
+
+ // array.filter(Boolean)
+
+
+
+
+console.log('---------')
+
+ function removeItemAll(arr, value) {
+    let i = 0;
+    
+    while (i < arr.length) {
+      if (arr[i] === value) {
+        
+        arr.splice(i, 1);
+      } else {
+        ++i
+      } 
+      
+    } return arr
+    
+    
+  }
+  // Usage
+  //console.log(removeItemOnce([2,5,9,1,5,8,5], 5))
+  console.log(removeItemAll([false,0,0,1,2,0,1,3,"a"], 0))
+
+
+
+
+
+
+
+
+
+
+  const zodis1 = [];
+const zodis2 = ["d", "e", "f"];
+const zodis3 = zodis1.concat(zodis2);
+
+console.log(zodis3);
