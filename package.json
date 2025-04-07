@@ -23,6 +23,7 @@
     "biggestNumber": "node --watch ./js/uzduotys/biggestNumber.js",
     "digit-count": "node --watch ./js/uzduotys/digit-count.js",
     "moneyFormat": "node --watch ./js/uzduotys/money-Format.js",
+    "names": "node --watch ./js/uzduotys/names-split-join.js",
     "for": "node --watch ./js/8-for.js",
     "methodArray": "node --watch ./js/13-method-array.js",
     "naujas3": "node --watch ./js/naujas3.js",

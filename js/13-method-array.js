@@ -78,3 +78,41 @@ console.log(n12);
 
 console.log('-----------------');
 
+
+console.clear()
+const numbers2 = [10,2,8,4,6]
+
+
+numbers2.push(9)
+console.log(numbers2);
+
+const g1 = numbers2.pop();
+const g2 = numbers2.pop();
+
+console.log(numbers2,g1,g2);
+
+
+numbers2.unshift(1)
+numbers2.unshift(2)
+numbers2.unshift(3)
+console.log(numbers2);
+
+
+numbers2.shift(3)
+console.log(numbers2);
+
+
+
+
+const magic = [11,22,33,44,55]
+console.log(magic.includes(5));
+console.log(magic.includes(55));
+
+console.log(magic.indexOf(5));
+console.log(magic.indexOf(55));
+
+const text = ['zodis','zodis1','zodis2','zodis3']
+
+// reikalingi produktai: a,b,c,d.
+const products  = `reikalingi produktai: ${text.join(', ')}`
+console.log(products);

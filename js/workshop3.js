@@ -860,6 +860,7 @@ const  array1 = [false,0,0,1,2,0,1,3,"a"]
 function zeroPush (array) {
     let i = 0;
     let count = 0
+    let zeroCount = []
     while (i < array.length) {
         if (array[i] === 0) {
             count++
@@ -869,7 +870,7 @@ function zeroPush (array) {
             i++
         }
 
-    } return count;
+    } return count
 
     
       
@@ -885,6 +886,32 @@ function zeroPush (array) {
  
  
 console.log(zeroPush(array1));
+
+
+let numbah = 7
+let zeroCount = ''
+let gucci23232 = zeroCount.replaceAll('','0'.repeat(numbah))
+
+console.log(gucci23232);
+let newaraay = gucci23232.split('')
+console.log(newaraay);
+
+let join = newaraay.join(',')
+let news = join.split();
+console.log(news);
+console.log(array1.concat(news));
+
+console.log('---awdawdawd----');
+
+
+console.log(array1.splice(array1.lastIndexOf(),0));
+
+console.log('----awdawdawd---');
+
+
+
+console.log('----------');
+
 
 //let count = 0;
     
