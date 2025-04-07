@@ -861,6 +861,8 @@ function zeroPush (array) {
     let i = 0;
     let count = 0
     let zeroCount = []
+    
+    
     while (i < array.length) {
         if (array[i] === 0) {
             count++
@@ -870,7 +872,7 @@ function zeroPush (array) {
             i++
         }
 
-    } return count
+    } console.log(count); 
 
     
       
@@ -1053,3 +1055,6 @@ const zodis2 = ["d", "e", "f"];
 const zodis3 = zodis1.concat(zodis2);
 
 console.log(zodis3);
+
+
+
