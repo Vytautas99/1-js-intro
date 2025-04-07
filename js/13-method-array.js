@@ -116,3 +116,54 @@ const text = ['zodis','zodis1','zodis2','zodis3']
 // reikalingi produktai: a,b,c,d.
 const products  = `reikalingi produktai: ${text.join(', ')}`
 console.log(products);
+
+
+console.clear()
+console.log(text);
+
+text.reverse()
+console.log(text);
+text.reverse()
+console.log(text);
+
+
+console.clear()
+
+const c1 = [1,11];
+const c2 = [2,22];
+const c3 = [3,3];
+const c4 = [4,44]; 
+
+
+const c12 = c1.concat(c2)
+
+
+console.log(c12);
+
+const c34 = c3.concat(c4)
+console.log(c34);
+
+
+const c123 = c1.concat(c2).concat(c3)
+console.log(c123);
+
+
+
+const c1234 = c1.concat(c2,c3,c4);
+console.log(c1234);
+
+const c1111 = c1.concat(c1,c1,c1,c1,c1)
+console.log(c1111);
+
+console.clear()
+
+
+
+
+const h = [11,22,33,44,55];
+console.log(h);
+
+h.splice(0,4)
+console.log(h);
+
+

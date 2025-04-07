@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "number": "node --watch ./js/1-number.js",
+    "arrow": "node --watch ./js/14-arrow.js",
+    "cw": "node --watch ./js/cw.js",
     "multiply": "node --watch ./js/uzduotys/multiply.js",
     "adult": "node --watch ./js/uzduotys/adult.js",
     "text-size": "node --watch ./js/uzduotys/text-size.js",
     "marks-average": "node --watch ./js/uzduotys/marks-average.js",
+    "fancyMath": "node --watch ./js/uzduotys/fancyMath.js",
     "array": "node --watch ./js/6-array.js",
     "9-object": "node --watch ./js/9-object.js",
     "methodString": "node --watch ./js/11-method-string.js",
