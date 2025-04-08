@@ -85,3 +85,28 @@ if (null) {
 }
 
 
+const a = 0 ? 1 : 2;
+console.log(a);
+
+
+const b = 1 ? 2 : 3
+console.log(b);
+
+
+
+const c = 2 ? 3 ? 4 : 5 : 6;
+console.log(c);
+
+
+const d = 0 ? 1 : 2 ? 3 : 4;
+console.log(d);
+
+
+const e = 1 ? 2  ? 3 : 4 : 5 ? 6 : 7;
+console.log(e);
+
+
+
+// unary (vienas) = 
+// binary (du) +,-,*,/
+// ternary (trys) ?:
