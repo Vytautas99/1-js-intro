@@ -203,3 +203,78 @@ function tripleTrouble(one, two, three){
         
     }
  }
+
+
+
+
+ function whatday(num) { 
+
+    const week = {
+    1: 'Sunday',
+    2: 'Monday',
+    3: 'Tuesday',
+    4: 'Wednesday',
+    5: 'Thursday',
+    6: 'Friday',
+    7: 'Saturday',   
+    }; 
+
+       if (week[num] === undefined) {
+       return "Wrong, please enter a number between 1 and 7";
+    }
+
+       return week[num];
+    }   
+
+    console.log(whatday(8));
+    
+
+
+
+/*
+    function fancyMath(n1, sign, n2) {
+        const func = {
+            '+': (a, b) => a + b,
+            '-': (a, b) => a - b,
+            '*': (a, b) => a * b,
+            '/': (a, b) => a / b,
+            '**': (a, b) => a ** b,
+            '%': (a, b) => a % b,
+        };
+    
+        const funcToUse = func[sign];
+        if (funcToUse === undefined) {
+            return ':(';
+        }  return funcToUse(n1, n2);
+    
+   */
+
+
+
+
+
+    
+
+
+        const worda = "the_stealth_warrior"
+
+
+            const splinger = worda.slice(4)
+            console.log(splinger);
+            
+
+
+        console.log(worda.replaceAll('_','T'+1));
+
+
+        
+
+
+        var str="this is an example.";
+var words=str.split(" ");
+for (var i=0;i<words.length;i++){
+  words[i]=words[i][0].toUpperCase()+words[i].slice(1);
+}
+console.log(words.join(" "));
+
+
