@@ -36,6 +36,7 @@
     "naujas2": "node --watch ./js/naujas2.js",
     "naujas4": "node --watch ./js/naujas4.js",
     "if": "node --watch ./js/5-if.js",
+    "ternary": "node --watch ./js/15-ternary.js",
     "boolean": "node --watch ./js/4-boolean.js",
     "function": "node --watch ./js/3-function.js",
     "string": "node --watch ./js/2-string.js",
