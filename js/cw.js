@@ -82,91 +82,6 @@ console.log(zeroPush(array3));
 
 console.log('---------');
 
-console.clear();
-
-
-/*
-Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
-Examples
-
-"the-stealth-warrior" gets converted to "theStealthWarrior"
-
-"The_Stealth_Warrior" gets converted to "TheStealthWarrior"
-
-"The_Stealth-Warrior" gets converted to "TheStealthWarrior"
-*/
-
-function toCamelCase(str){
-    
-    const newS = str.toLowerCase()
-    console.log(newS);
-    const replace = str.replaceAll('-','*').replaceAll('_','*');
-    console.log(replace);
-
-    if (str.charAt(0) === newS.charAt(0) ) {
-        console.log(true);
-      
-       
-
-        
-    } for (let i = 0; i < str.length; i++) {
-       let finalsentence = replace.indexOf('*')
-       console.log(finalsentence);
-    } 
-    
-    
-
-
-    
-    
-    
-}
-
-
-     console.log(toCamelCase("the-stealth_warrior"));
-      
-
-
-
-      /*
-      
-    const newS = str.toLowerCase()
-    console.log(newS);
-    
-    const firstLetter = newS.charAt(0)
-    
-    const firstLetterUppercase = firstLetter.toUpperCase()
-    
-    let newtest = "The-stealth-warrior";
-    
-    const firstWord = newtest.replace(0,'adwd')
-    console.log(firstWord);
-    
-    
-    
-    //dashUnderscore = str.split('_')
-    
-    //const cameCase = 0;
-    
-    const replace = str.replaceAll('-','*').replaceAll('_','*');
-    const upCase = replace.indexOf('*')+1;
-    const lastIndex = replace.lastIndexOf('*')+1;
-
-    const gucci = replace.charAt(lastIndex).toUpperCase() 
-    
-    
-    console.log(gucci);
-    
-    
-    
-    //console.log(lastIndex.toUpperCase())
-    
-    //console.log(cameCase);
-    
-    
-    console.log(lastIndex);
-    console.log(upCase);
-    */
 
     console.log('---------------------');
     console.clear()
@@ -278,3 +193,198 @@ for (var i=0;i<words.length;i++){
 console.log(words.join(" "));
 
 
+
+
+
+console.clear();
+
+
+
+
+      /*
+      
+    const newS = str.toLowerCase()
+    console.log(newS);
+    
+    const firstLetter = newS.charAt(0)
+    
+    const firstLetterUppercase = firstLetter.toUpperCase()
+    
+    let newtest = "The-stealth-warrior";
+    
+    const firstWord = newtest.replace(0,'adwd')
+    console.log(firstWord);
+    
+    
+    
+    //dashUnderscore = str.split('_')
+    
+    //const cameCase = 0;
+    
+    const replace = str.replaceAll('-','*').replaceAll('_','*');
+    const upCase = replace.indexOf('*')+1;
+    const lastIndex = replace.lastIndexOf('*')+1;
+    
+    const gucci = replace.charAt(lastIndex).toUpperCase() 
+    
+    
+    console.log(gucci);
+    
+    
+    
+    //console.log(lastIndex.toUpperCase())
+    
+    //console.log(cameCase);
+    
+    
+    console.log(lastIndex);
+    console.log(upCase);
+    */
+
+console.clear();
+   /*
+   Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
+   Examples
+   
+   "the-stealth-warrior" gets converted to "theStealthWarrior"
+   
+   "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+   
+   "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
+   */
+   
+   function toCamelCase(str){
+        ran = false
+       const newS = str.toLowerCase()
+       //console.log(newS);
+       const replace = str.replaceAll('-','*').replaceAll('_','*').split('*');
+       //console.log(replace);
+        //const newW = replace.split('*')
+        //console.log(newW);
+        let firstW = [];
+        let restW = [];
+        //console.log(firstWord5);
+        firstW.push(replace[0])
+        if (str === '') {
+            return '';
+        }
+       
+        
+       if (str.charAt(0) !== newS.charAt(0) ) {
+           //console.log(true);
+        for (let i = 0; i < replace.length; i++) {
+            
+            //newArr.push(replace[0])
+            replace[i]=replace[i][0].toUpperCase()+replace[i].slice(1);
+            
+            
+            //console.log(replace);
+
+
+            //restW = restW.push(replace[1],replace[2])
+          
+            //const name = replace[i][0];
+            //const firstLetter = name.toUpperCase() 
+            //console.log(firstLetter);
+            //const restLetters = replace
+            //console.log(restLetters);
+           
+            
+        } return replace.join('')
+          
+   
+           
+       } else {
+          for (let i = 0; i < replace.length; i++) {
+
+            replace[i]=replace[i][0].toUpperCase()+replace[i].slice(1);
+            restW = (replace.slice(1,replace.length));
+            
+          }
+        return firstW[0].toLowerCase()  + restW.join('')
+       } 
+       
+   
+       
+    
+       
+       
+   } 
+   
+   
+        console.log(toCamelCase("a_cat-Was-Savage"));
+         
+   
+        //return firstWord5 + restWords.slice(4,7).join('')  
+        //return replace
+
+
+
+
+var str="this is an example.";
+var words1=str.split(" ");
+for (var i=0;i<words1.length;i++){
+  words1[i]=words1[i][0].toUpperCase()+words1[i].slice(1);
+}
+//console.log(words.join(" "));
+
+
+
+
+
+function createArray(number) {
+    const newArray = [];
+    for (let counter = 1; counter <= number; counter++) {
+        newArray.push(counter);
+    }
+    return newArray;
+}
+
+
+console.log(createArray(5));
+
+
+
+
+
+function checkForFactor (base, factor) {
+  
+    const forb = base % factor === 0 ? 'true' : 'false'
+    return forb;
+}
+
+
+console.log(checkForFactor(8,3));
+
+
+const number = 7 <= 4 ? 7:5
+console.log(number);
+
+
+
+
+function paperwork(n, m) {
+
+    return check = n < 0 || m < 0 ? 0: n * m;
+        
+    }
+    
+    console.log(paperwork(5,5));
+    
+
+    
+  function paperwork(n, m) {
+    return  n < 0 || m < 0 ? 0: n * m;
+        
+    }
+    
+    console.log(paperwork(5,5));
+
+
+    //const check = n < 0 || m < 0 ? 0: n * m;function paperwork(n, m) {
+
+
+
+    console.log((23.59,59 - 12.00)*600000)
+
+  
