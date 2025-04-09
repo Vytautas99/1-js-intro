@@ -1057,3 +1057,28 @@ const zodis3 = zodis1.concat(zodis2);
 console.log(zodis3);
 
 
+
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+
+
+
+
+
+
+//const check = n < 0 || m < 0 ? 0: n * m;function paperwork(n, m) {
+
+
+
+  function paperwork(n, m) {
+    return check = n < 0 || m < 0 ? 0: n * m;
+        
+    }
+    
+    console.log(paperwork(5,5));
+    
+
+    console.log(0*400);
+    
