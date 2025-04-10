@@ -6,7 +6,7 @@
   "scripts": {
     "number": "node --watch ./js/1-number.js",
     "arrow": "node --watch ./js/14-arrow.js",
-    "cw": "node --watch ./js/cw.js",
+    "cw": "node --watch ./js/cwrs.js",
     "multiply": "node --watch ./js/uzduotys/multiply.js",
     "adult": "node --watch ./js/uzduotys/adult.js",
     "text-size": "node --watch ./js/uzduotys/text-size.js",
@@ -40,6 +40,7 @@
     "naujas4": "node --watch ./js/naujas4.js",
     "sort": "node --watch ./js/19-sort.js",
     "if": "node --watch ./js/5-if.js",
+    "switch": "node --watch ./js/22-switch.js",
     "while": "node --watch ./js/17-while.js",
     "ternary": "node --watch ./js/15-ternary.js",
     "boolean": "node --watch ./js/4-boolean.js",

@@ -385,6 +385,110 @@ function paperwork(n, m) {
 
 
 
-    console.log((23.59,59 - 12.00)*600000)
+   
 
   
+
+
+
+    function peopleWithAgeDrink(old) {
+  
+       return  old < 14 ? "drink toddy" ? old > 14 && old < 18 : "drink coke": 'adwawd'
+        
+  
+      };
+
+      console.log(peopleWithAgeDrink(13));
+      
+
+
+      function chromosomeCheck(sperm) {
+        if  (sperm.includes('Y'))
+            return 'yes'
+      }
+
+      console.log(chromosomeCheck('XX'));
+      
+
+
+
+
+
+      function findNeedle(haystack) {
+        return haystack.includes('needle') ? `found the needle at position ${haystack.indexOf('needle')}`: false;
+      }
+
+
+
+      function validateHello(greetings) {
+       const gucci =  greetings.includes('ciao') ? 'yes' : 'no'
+       return gucci
+      }
+
+      console.log(validateHello('ciao'));
+      
+
+
+
+
+      //function validateCode (code) {
+       
+       // return code.charAt(0) === 1 || code.charAt(1)(1) === 2 || code.charAt(2).search(2) === 3 ? true : false
+        
+        
+        //}
+//
+
+      //  console.log(validateCode(123));
+        
+
+
+
+
+
+      function grader(score) {
+        if (score >= 0.6 && score < 0.7) {
+                   return "D"
+               } else if (score >= 0.7 && score < 0.8) {
+                   return "C"
+               } else if (score >= 0.8 && score < 0.9) {
+                   return "B"
+               } else if (score >= 0.9 && score <= 1) {
+                   return "A"
+               } else {
+                   return "F"
+               }
+       }
+
+      console.log(grader(0.6));
+      
+
+
+
+      function nameShuffler(str){
+        return str.split(' ').reverse().join(' ' )
+        
+      }
+
+
+
+      console.log(nameShuffler('john McClane'));
+      
+
+
+
+      function validateHello(greetings) {
+        if (greetings.toLowerCase().includes ('hello') ||
+            greetings.toLowerCase().includes('ciao')   ||
+            greetings.toLowerCase().includes('salut')  ||
+            greetings.toLowerCase().includes('hallo')  ||
+            greetings.toLowerCase().includes('ahoj')   ||
+            greetings.toLowerCase().includes('hola')   ||
+            greetings.toLowerCase().includes('czesc')  )
+        {
+                return true;
+        } else {
+
+            return false;
+        }
+      }
