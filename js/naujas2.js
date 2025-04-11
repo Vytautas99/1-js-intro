@@ -376,24 +376,23 @@ console.log('---------------------');
 
 // 9. Raskite didžiausią skaičių sąraše ir patikrinkite, ar jis didesnis už 10.
 
-var warned = false;
 
-const Array9 = [2, 5, 2, 4,2]
+
+const Array9 = [2, 5, 2, 4, 2]
 
 
  for (let i = 0; i < Array9.length; i++) {
-    if (Array9[i] > 10) {
+    if (Math.max(Array9[i]) > 10) {
         
         console.log('yra skaicius didesnis uz 10: ' + Array9[i]);
-         warned = false;
+        
  } else { console.log('nera');
  
-    warned = false;
+   
  }
  
-    
- warned = true;
-    
+
+ 
  }
     
  
@@ -401,16 +400,34 @@ const Array9 = [2, 5, 2, 4,2]
 
 // 10. Patikrinkite, ar masyve yra daugiau nei 3 to paties skaičiaus elementai.
 
-const Array10 =  [2, 2, 2, 2, 2, 5, 6]
 
-for (let i = 0; i < Array10.length; i++) {
-    if (Array10[i] === i) {
-        console.log(i);
-        
-    }
-   
-    
+const p6 = [];
+
+const Array10 =      [2, 2, 2, 2, 2, 2, 8, 2, 7, 8, 9, 2, 8, 4];                        
+
+function ckDub (arr) {
+
+for (let i = 0; i < arr.length; i++) {
+    const g = arr[i]
+   if (arr[g] === arr[g+1]) {
+        p6.push(arr[g]);
+          
 }
+
+
+} if (p6.length > 3) {
+    return true
+} else {
+    return false}
+
+}
+
+
+console.log(ckDub(Array10));
+
+
+
+
 
 /*
 
@@ -744,6 +761,16 @@ console.log('----------------');
 // b. Padaryti su keliais skaičių tipo kintamaisiais
 
 
+const rectangleM = [8,6]
+function rectangle(ilgis, plotis) {
+
+    //return ilgis * plotis + 'cm²'
+    return rectangleM[0] * rectangleM[1] + 'cm²'
+}
+
+console.log(rectangle(rectangleM));
+
+
 
 
 console.log('----------------');
@@ -765,7 +792,14 @@ console.log('----------------');
 
 // 9. Sukurkite funkciją, kuri tikrina, ar teksto tipo kintamasis prasideda raide 'a'.
 
-function name(params) {}
+function name1(text) {
+    if (text.indexOf(0) === 'a' ) {
+        return true;
+    } else { 
+        return false;
+    }
+}
+    console.log(name1('zodis'));
     
 
 console.log('----------------');

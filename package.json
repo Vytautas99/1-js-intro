@@ -43,6 +43,7 @@
     "switch": "node --watch ./js/22-switch.js",
     "while": "node --watch ./js/17-while.js",
     "ternary": "node --watch ./js/15-ternary.js",
+    "workshop4": "node --watch ./js/workshop4.js",
     "boolean": "node --watch ./js/4-boolean.js",
     "function": "node --watch ./js/3-function.js",
     "string": "node --watch ./js/2-string.js",
