@@ -147,26 +147,3 @@ function zeroPush (arr) {
 
 
 
-
-
- function tripleTrouble(one, two, three){
-    let comb = ''
-      for (i =0; i < one.length; i++) {
-        comb += one[i] + two[i] + three[i]
-        
-
-      } return comb
-    
-   }
-
-
-
-
-console.log(tripleTrouble("Sea","urn","pms"));
-
-
-
-
-
-
-
