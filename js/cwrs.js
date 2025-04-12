@@ -492,3 +492,327 @@ function paperwork(n, m) {
             return false;
         }
       }
+
+
+console.log('---------------');
+
+
+      function differenceInAges(ages){
+
+        return [Math.min(...ages),Math.max(...ages),Math.max(...ages) - Math.min(...ages)];
+           
+       }
+       //min = infinity   
+       //max = -Infinity
+        //ages.sort((a, b) => a - b);
+       
+  //const ddd = [1, 2, 3,5,9,8];
+        //console.log(Math.min(...ddd));
+        //console.log(Math.min(1, 2, 3));
+        //console.log(Math.max(...ddd));
+        
+
+       
+         console.log(differenceInAges([82, 15, 6, 38, 35]));
+       
+       
+      console.log('---------------');
+
+
+         function tripleTrouble(one, two, three){
+            let comb = ''
+              for (i =0; i < one.length; i++) {
+                comb += one[i] + two[i] + three[i]
+                
+        
+              } return comb
+            
+           }
+        
+        
+        
+        
+        console.log(tripleTrouble("Sea","urn","pms"));
+        
+   
+        
+        
+   
+     
+        
+      
+        
+        
+        console.log('---------------');
+        
+        
+        function doubleChar(str) {
+            let comb = '';
+            for (const r of str) {
+              comb += r + r
+            } return comb
+          }
+          
+          console.log(doubleChar("String" ))
+        
+          //const doubleChar = (str) => str.split("").map(c => c + c).join("");
+
+
+          console.log('---------------');
+
+
+
+
+ function century(year) {   
+   if (year % 100 === 0 ) {
+    return year/100
+   } else {
+    Math.ceil(year/100)
+   }
+ }
+
+
+
+
+ console.log('---------------');
+
+
+
+ function magNumber(info){
+
+    if (info[0] === "PT92" ) {
+        return info[1] * 3 < 17 ? Math.ceil((info[1] * 3) / 17) : Math.ceil(info[1] * 3 / 17) ;
+    } if (info[0] === "M4A1" ) {
+        return info[1] * 3 < 30 ? Math.ceil((info[1] * 3) / 30) : Math.ceil(info[1] * 3 / 30) ;
+    } if (info[0] === "M16A2") {
+        return info[1] * 3 < 30 ? Math.ceil((info[1] * 3) / 30) : Math.ceil(info[1] * 3 / 30) ;
+    } if (info[0] === "PSG1") {
+        return info[1] * 3 < 5 ? Math.ceil((info[1] * 3) / 5) : Math.ceil(info[1] * 3 / 5) ;
+    }
+      
+
+  }
+
+
+
+console.log(magNumber(["PT92",6 ]));
+console.log(magNumber(["M4A1",8 ]));
+console.log(magNumber(["M16A2",19 ]));
+console.log(magNumber(["PSG1",31 ]));
+console.log(magNumber(["PT92",19 ]));
+
+
+
+
+
+console.log('---------------');
+
+
+
+function addLength(str) {
+
+return  str.split(' ').map(word => word + ' ' + word.length);
+
+}
+
+
+
+
+console.log(addLength("apple ban"));
+console.log(addLength("you will win"));
+
+
+//const addLength = str => str.split(' ').reduce((acc, item) => [...acc, `${item} ${item.length}`] , [])  
+
+
+console.log('---------------');
+
+
+function findDifference(a, b) {
+
+    return Math.abs(a.reduce((total, n) => total * n, 1) - b.reduce((total, n) => total * n, 1)) 
+    
+  }
+
+
+console.log(findDifference([3, 2, 5], [1, 4, 4]));
+console.log(findDifference([9, 7, 2], [5, 2, 2]));
+console.log(findDifference([11, 2, 5], [1, 10, 8]));
+console.log(findDifference([4, 4, 7], [3, 9, 3]));
+console.log(findDifference([15, 20, 25], [10, 30, 25]));
+console.log(findDifference([7,21,2], [20,12,7]));
+
+console.log('---------------');
+
+function bmi(weight, height) {
+
+    if (weight / height**2 <= 18.5 ) {
+        return "Underweight";
+    } if (weight / height**2 <= 25.0) {
+        return "Normal"
+    } if (weight / height**2 <= 30.0) {
+        return "Overweight"
+    } if (weight / height**2 > 30) {
+        return "Obese"
+    }
+  }
+
+
+  console.log(bmi(50, 1.80));
+  console.log(bmi(80, 1.80));
+  console.log(bmi(90, 1.80));
+  console.log(bmi(100, 1.80));
+  
+  console.log('---------------');
+
+  function switchItUp(number){
+
+   switch (true) {
+
+    case number === 0:
+        return  'Zero'
+    case number === 1:
+        return  'One'
+    case number === 2:
+        return  'Two'
+    case number === 3:
+        return  'Three'
+    case number === 4:
+        return  'Four'
+    case number === 5:
+        return  'Five'
+    case number === 6:
+        return  'Six'
+    case number === 7:
+        return  'Seven'
+    case number === 8:
+        return  'Eight'
+    case number === 9:
+        return  'Nine'
+       
+
+
+   }
+    }
+
+
+
+
+
+    console.log(switchItUp(1));
+    console.log(switchItUp(2));
+    console.log(switchItUp(3));
+    console.log(switchItUp(4));
+    console.log(switchItUp(5));
+    
+
+
+    console.log('---------------');
+
+
+
+    function xor(a, b) {
+    return  a === true && b === true ? false : a === false && b === false ? false : true;
+    // return a !== b;
+
+    }
+
+
+    console.log(xor(true, false));
+    
+
+console.log('---------------');
+
+
+function multipleOfIndex(array) {
+    newArr = [];
+    for (i = 0; i < array.length; i++) {
+
+        if (array[i] % i === 0 || array[i] === 0) {
+           newArr.push(array[i]);
+                
+        }
+      
+    } return newArr
+    
+ 
+}
+
+// return array.filter((el, idx) => el % idx === 0 | el === 0);
+
+console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
+console.log(multipleOfIndex([68, -1, 1, -7, 10, 10]));
+console.log(multipleOfIndex([11, -11], [-11]));
+
+console.log('---------------');
+
+
+function capitalizeWord(word) {
+    return word[0].toUpperCase() + word.slice(1);
+  }
+
+// const capitalizeWord = (word) => word.replace(word.charAt(0), word.charAt(0).toUpperCase());
+
+  console.log(capitalizeWord('word'))
+
+
+  console.log('---------------');
+
+
+  function contamination(text,char){
+
+   return text.split('').fill(char).join('')
+    
+  }
+
+//  return char.repeat(text.length)
+//   return text.replace(/./g, char);
+
+  console.log(contamination("abc","z"));
+
+
+  console.log('---------------');
+
+  
+  function position(letter){
+  
+    switch(letter) {
+       case 'a': return "Position of alphabet: 1"
+       case 'b': return "Position of alphabet: 2"
+       case 'c': return "Position of alphabet: 3"
+       case 'd': return "Position of alphabet: 4"
+       case 'e': return "Position of alphabet: 5"
+       case 'f': return "Position of alphabet: 6"
+       case 'g': return "Position of alphabet: 7"
+       case 'h': return "Position of alphabet: 8"
+       case 'i': return "Position of alphabet: 9"
+       case 'j': return "Position of alphabet: 10"
+       case 'k': return "Position of alphabet: 11"
+       case 'l': return "Position of alphabet: 12"
+       case 'm': return "Position of alphabet: 13"
+       case 'n': return "Position of alphabet: 14"
+       case 'o': return "Position of alphabet: 15"
+       case 'p': return "Position of alphabet: 16"
+       case 'q': return "Position of alphabet: 17"
+       case 'r': return "Position of alphabet: 18"
+       case 's': return "Position of alphabet: 19"
+       case 't': return "Position of alphabet: 20"
+       case 'u': return "Position of alphabet: 21"
+       case 'v': return "Position of alphabet: 22"
+       case 'w': return "Position of alphabet: 23"
+       case 'x': return "Position of alphabet: 24"
+       case 'y': return "Position of alphabet: 25"
+       case 'z': return "Position of alphabet: 26"
+       
+    }
+  }
+
+//  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  // return 'Position of alphabet: ' + (alphabet.indexOf(letter) + 1);
+
+  //position = l => `Position of alphabet: ${l.charCodeAt() - 96}`;
+
+console.log(position("a"));
+
+
+console.log('---------------');

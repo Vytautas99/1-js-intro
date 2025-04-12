@@ -96,27 +96,26 @@ console.log('-------------');
 
    // 8. Atspausdinkite nuo 1 iki 5 žvaigždučių (*) seriją (pvz., *, **, *** ir t. t.).
 
-   for (let greeting2 = 0; greeting2 < 1; greeting2++) {
-       console.log('*');
-       console.log('**');
-       console.log('***');
-       console.log('****');
-       console.log('*****');
-    
-}
-
+   let text = ['','*'];
+   for (let i = 0; i < 5; i++) {
+       text += text[i]
+      console.log(text.replace(',',''));
+       
+   }
+   
 console.log('-------------');
 
  //   9. Atspausdinkite atvirkštinę eigą su žvaigždutėmis 5 eilutėse (pvz., *****, ****, *** ir t. t.).
   
- for (let greeting1 = 0; greeting1 < 1; greeting1++) {
-     console.log('*****');
-     console.log('****');
-     console.log('***');
-     console.log('**');
-    console.log('*');
-
+ let g = ['*','*','*','*','*','*']
+ 
+    for (let i = 0  ; i < 5; i++) {
+    
+    g.pop()
+    console.log(g.join(''));
+    
 }
+
 
    console.log('------------------------');
    
@@ -247,11 +246,15 @@ console.log('--------------------');
 
 // 2.3 Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje.
 
-for (fibonacio = 0; fibonacio <= 10; fibonacio++) {
-
-   
-    //const element = array [fibonacio];
+fib = [0,1];
+for (i = 2; i < 10; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+    console.log(fib);
+    
 }
+
+
+
 
 console.log('--------------------');
 
