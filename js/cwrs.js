@@ -816,3 +816,298 @@ console.log(position("a"));
 
 
 console.log('---------------');
+
+
+function validPhoneNumber(phoneNumber){
+
+
+    if (phoneNumber.length !== 14 
+        || typeof phoneNumber !== 'string' 
+        || phoneNumber.charAt(0) !== '(' 
+        || phoneNumber.charAt(4) !== ')' 
+        || phoneNumber.charAt(5) !== ' ' 
+        || phoneNumber.charAt(9) !== '-' ) {
+        return false;
+   } else {
+        return true;
+   }
+
+}
+
+/*
+function validPhoneNumber(phoneNumber){
+  const num1 = phoneNumber.slice(1,4);
+  const num2 = phoneNumber.slice(6,9);
+  const num3 = phoneNumber.slice(10,14);
+  
+  return `(${num1}) ${num2}-${num3}` === phoneNumber
+
+*/
+  console.log(validPhoneNumber("(123) 456-7890"));
+  console.log(validPhoneNumber("(1111)555 2345"));
+  console.log(validPhoneNumber("(098) 123 4567"));
+  
+
+ 
+
+  console.log('---------------');
+
+
+  let isValidMXPhoneNumber = function(str) {
+  const gucci2  = str.replaceAll(')','').replaceAll('(','').split(' ')
+    
+    if (gucci2[0] === '56' || gucci2[0] === '55'   ) {
+        return true;
+    } else {
+       return false;
+    }
+
+
+     //console.log(gucci2.length);
+
+
+
+  };
+
+    ///replace(/\D/g,'') 
+
+
+  console.log(isValidMXPhoneNumber('(55) 84 65 52'));
+  console.log(isValidMXPhoneNumber('56 84 65 52'));
+  
+
+  console.log('------------');
+  
+
+  function solution(n){
+    return Math.round(n*2)/2;
+  }
+
+// Math.round(n*2)/2
+
+  console.log(solution(4.2));
+  console.log(solution(4.4));
+  console.log(solution(4.6));
+  console.log(solution(4.8));
+  console.log(solution(4.4));
+  
+
+
+  console.log('--------------');
+  
+
+
+  function greet(language) {
+	switch (language) {
+        case "english": return "Welcome";
+        case "czech": return "Vitejte";
+        case "danish": return "Velkomst";
+        case "dutch": return "Welkom";
+        case "estonian": return "Tere tulemast";
+        case "finnish": return "Tervetuloa";
+        case "flemish": return "Welgekomen";
+        case "french": return "Bienvenue";
+        case "german": return  "Willkommen";
+        case "irish": return "Failte";
+        case "italian": return "Benvenuto";
+        case "latvian": return "Gaidits";
+        case "lithuanian": return "Sveiki atvykę";
+        case "polish": return "Witamy";
+        case "spanish": return "Bienvenido";
+        case "swedish": return "Valkommen";
+        case "welsh": return "Croeso"   ; 
+        default: return "Welcome";
+            
+    }
+
+    
+  }
+
+
+  console.log(greet("lithuanian"));
+  
+
+  console.log('-------------');
+
+
+
+  
+ function sumStrings(a,b) { 
+
+ return (Number(a) + Number(b)).toString()
+
+
+}
+
+
+console.log(sumStrings('123','456'));
+
+
+console.log('------------------');
+
+
+
+function setAlarm(employed, vacation){
+return employed === true && vacation === false ? true : false;
+
+
+
+}
+
+// return employed > vacation
+// return employed && !vacation;
+
+
+
+console.log('------------------');
+
+
+function peopleWithAgeDrink(old) {
+  return old < 14 ? "drink toddy" : old >= 14 && old < 18 ? "drink coke" : old >= 18 && old < 21 ? "drink beer" : "drink whisky";
+};
+
+// age < 14 ? "drink toddy" :
+  //age < 18 ? "drink coke" :
+  //age < 21 ? "drink beer" : "drink whisky"
+
+
+
+
+
+
+
+
+console.log('------------------');
+
+
+function updateLight(current) {
+  
+return current === 'green' ? 'yellow': current === 'yellow' ? 'red' : 'green';
+
+}
+
+console.log(updateLight('green'));
+console.log(updateLight('yellow'));
+console.log(updateLight('red'));
+
+
+
+console.log('------------------');
+
+
+function integrate(coefficient, exponent) {
+  return `${coefficient/(exponent+1)}x^${exponent+1}`;
+}
+
+
+
+console.log(integrate(3,2));
+console.log(integrate(12,5));
+console.log(integrate(20,1));
+
+
+console.log('------------------');
+
+
+
+function grow(x){
+  return x.reduce((total, n) => total * n, 1);
+
+}
+
+// let res = 1;
+  //for (let i = 0; i < x.length; i++) {
+ //  res *= x[i];
+  //}
+
+console.log(grow([2, 2, 2, 2, 2, 2]));
+
+
+console.log('------------------');
+
+function derive(coefficient,exponent) {
+
+  return `${coefficient*exponent}x^${exponent-1}`;
+  
+}
+
+console.log(derive(7,8));
+console.log(derive(5,9));
+
+console.log('------------------');
+
+
+function checkForFactor (base, factor) {
+  return base%factor === 0 ? true : false;
+  
+}
+
+
+console.log(checkForFactor(10,2));
+console.log(checkForFactor(9,2));
+
+
+console.log('------------------');
+
+
+
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+ return (blueStart - bluePulled) / (blueStart - bluePulled + redStart - redPulled);
+}
+
+
+console.log(guessBlue(5, 5, 2, 3));
+console.log(guessBlue(5, 7, 4, 3));
+console.log(guessBlue(12, 18, 4, 6));
+
+console.log('------------------');
+
+
+
+
+
+function reverse23(n){
+  let dawd = []
+for (let i = 0; i < n.length; i++) {
+  
+  dawd.push(n[i])
+}
+  
+ return dawd
+
+}
+
+console.log(reverse23(123))
+//console.log(reverse23())
+//console.log(reverse23(123))
+
+//(n.toString().split('').reverse().join(''))
+
+
+
+// Iterate backward over array elements
+const numeralArray = [10, 20, 30, 40, 50];
+
+for (let pos = numeralArray.length - 1; pos >= 0; pos--) {
+  console.log(numeralArray[pos]);
+}
+
+
+
+
+function reverse23232(n){
+    
+  if (n === undefined) {
+     
+     return false
+
+ } else {
+
+     return Number(n.toString().split('').reverse().join(''))
+ }
+
+
+
+}
+
+//   /[a-z]/gi
