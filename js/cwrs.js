@@ -1084,6 +1084,7 @@ console.log(reverse23(123))
 //(n.toString().split('').reverse().join(''))
 
 
+console.log('------------------');
 
 // Iterate backward over array elements
 const numeralArray = [10, 20, 30, 40, 50];
@@ -1092,6 +1093,7 @@ for (let pos = numeralArray.length - 1; pos >= 0; pos--) {
   console.log(numeralArray[pos]);
 }
 
+console.log('------------------');
 
 
 
@@ -1111,3 +1113,443 @@ function reverse23232(n){
 }
 
 //   /[a-z]/gi
+
+console.log('------------------');
+
+
+function sixToast(num) {
+  return num === 6 ? 0 : num < 6 ? 6 - num : num - 6;
+}
+
+// return Math.abs(6 - num);
+
+console.log('------------------');
+
+function copyList(l){
+   return [...t];
+}
+// return l.slice();
+// return [].concat(l)
+
+t = [1, 2, 3, 4]
+console.log('------------------');
+
+
+// Make them bark!
+//Dog.prototype.bark = function() { 
+  //return  "Woof!";
+//}
+
+
+console.log('------------------');
+ 
+function isPythagoreanTriple(integers) {
+ return integers[0]**2 + integers[1]**2 === integers[2]**2
+  || integers[2]**2 + integers[1]**2 === integers[0]**2 
+  || integers[2]**2 + integers[0]**2 === integers[1]**2 ? true: false;
+}
+
+console.log(isPythagoreanTriple([3, 4, 5]));
+console.log(isPythagoreanTriple([3, 5, 9]));
+console.log(isPythagoreanTriple([100, 3, 999]));
+
+console.log('------------------');
+
+const alphabet = ['a',1,'b',2,'c',3,'d',4,'e',5,'f',6,'g',7,'h',8,'i',9,'j',10,'k',11,'l',12,'m',13,'n',14,'o',15,'p',16,'q',17,'r',18,'s',19,'t',20,'u',21,'v',22,'w',23,'x',24,'y',25,'z',26]
+
+
+/*
+function bingo(a) {
+  let naujas = [];
+  for (num of a ) {
+      if (num === 2 || num === 9 ||  num === 14  ||  num === 7 ||  num === 15) {
+          naujas.push(num)
+      }
+    } return naujas.filter((item, index) => naujas.indexOf(item) === index).length === 5 ? 'WIN':'LOSE'; 
+}
+*/
+
+function bingo(a) {
+  return a.includes(2) && a.includes(9) && a.includes(14) && a.includes(7) && a.includes(15) ? 'WIN':'LOSE'; 
+}
+
+
+
+// [2,9,14,7,15].every(x => a.includes(x)) ? "WIN" : "LOSE"
+// const bingo = a =>[...`bingo`].every(val => a.includes(val.charCodeAt() - 96)) ? `WIN` : `LOSE`;
+
+console.log(bingo([1,2,3,4,5,6,7,8,9,10]));
+console.log(bingo([21,13,2,7,5,14,7,15,9,10]));
+
+console.log('------------------');
+
+
+function countSheep (num){
+  sheep = '';
+ for (i = 1; i <= num; i++) {
+    sheep += i + ' sheep...'
+ } return sheep;
+}
+
+console.log(countSheep(3));
+
+console.log('------------------');
+
+
+// speed of aircrafts is given in *knots*
+// travelTime is in *minutes*
+// travel distance should be returned in *kilometers*
+function travelDistance(avgSpeed, travelTime) {
+  const KM_PER_MILE = 1.609344;
+  const travelHours = travelTime / 60;
+  const travelMiles = avgSpeed * travelHours;
+  const travelKms   = travelMiles % KM_PER_MILE;
+  
+  return travelKms 
+}
+
+
+console.log(travelDistance(600, 60));
+console.log(travelDistance(800, 60));
+
+
+
+
+
+
+console.log('------------------');
+
+function boolToWord( bool ){
+  return bool? 'Yes':'No';
+}
+
+
+console.log(boolToWord(true), 'Yes')
+console.log(boolToWord(false), 'No')
+
+
+console.log('------------------');
+
+
+function squareSum(numbers){
+  result = 0;
+ for (const sqr of numbrs) {
+    result += sqr**2;
+ } return result;
+}
+
+
+/*
+
+function squareSum(numbers){
+  return numbers.reduce(function(sum, n){
+    return (n*n) + sum;
+  }, 0)
+}
+
+*/
+
+
+//return numbers.reduce((sum,num) => sum + (num * num), 0);
+
+
+console.log('------------------');
+
+function removeChar(str){
+  return str.slice(1,-1);
+ 
+}
+ console.log(removeChar('country'));
+ 
+
+ /*
+
+  str1 = str.split('');
+  str1.shift();
+  str1.pop();
+  return str1.join('');
+
+  */
+
+
+  console.log('------------------');
+  
+
+
+ 
+  function findSmallestInt(arr) {
+
+    return Math.min(...arr);
+  }
+
+  console.log(findSmallestInt([78,56,232,12,8]));
+
+  console.log('------------------');
+
+
+  function noSpace(x){
+    return x.replaceAll(' ','')
+  }
+  // return x.replace(/\s/g, '');
+  console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B', '8j8mBliB8gimjB8B8jlB'));
+
+
+  console.log('------------------');
+ 
+  function abbrevName(name){
+
+    //return name.replace(' ','.').charAt(indexOf('.'))
+}
+//.toUpperCase().slice(name.indexOf())
+console.log(abbrevName("Sam Harris"));
+
+
+
+
+console.log('------------------');
+
+
+
+
+
+function getSum(a, b)
+{ sum = 0;
+   sum2 = 0;
+    for (let i = 0 ; i  < a; i++) {  
+       
+        sum = sum + i + i 
+
+  } for (let i = 0 ; i  < b; i++) {  
+       
+    sum2 = sum2 + i + i
+
+} return sum + sum2;
+}
+
+
+console.log((getSum(0,-1), -1));
+console.log((getSum(0, 1),  1));
+console.log((getSum(2, 2),  2));
+
+
+console.log('-----------');
+
+const textadw = "is2 Thi1s T4est 3a"
+const newArr2 = textadw.split(' ')
+let empty1 = [];
+let empty2 = [];
+let empty3 = [];
+let empty4 = [];
+let empty5 = [];
+let empty6 = [];
+let empty7= [];
+let empty8 = [];
+let empty9 = [];
+
+
+//console.log(newArr2.find((element) => element >=9));
+
+function order(words){
+  //words.split(' ').sort((a,b)) 
+}
+
+
+
+console.log(order("is2 Thi1s T4est 3a"));
+
+
+console.log('-----------');
+
+
+function maps(x){
+  return x.map(n => n * 2);
+}
+
+/*
+
+function maps(x){
+//return x.map(el => el * 2);
+let arr = [];
+for(let i = 0; i < x.length; i++){
+arr.push(x[i] * 2);
+}
+return arr;
+}
+
+*/
+
+console.log('-----------');
+
+function isDivisible(n, x, y) {
+  return  (n%x) + (n%y) === 0;
+ }
+
+ console.log('-----------');
+
+
+ 
+
+ 
+ function sum5 (numbers) {
+  return numbers.reduce((a, n) => a + n, 0)
+}
+
+console.log(sum5([1, 5.2, 4, 0, -1]))
+
+
+console.log('-----------');
+
+
+
+function betterThanAverage(classPoints, yourPoints) {
+  return classPoints.concat(yourPoints).reduce((a, b) => a + b,0) / classPoints.length+1 < yourPoints
+}
+
+console.log(betterThanAverage([2, 3], 5));
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75));
+console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9));
+
+
+console.log('-----------');
+
+
+function countPositivesSumNegatives(input) {
+   let pos = 0;
+   let neg = 0;
+   if (input === 0 || input.length === 0) {
+    return [];
+   }
+  for (const counter of input) {
+      if (counter > 0) {
+        pos++
+      } else if (counter < 0) {
+        neg += counter
+      }
+  } return [pos,neg]
+}
+console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]));
+
+//  return input && input.length ? [input.filter(p => p > 0).length, input.filter(n => n < 0).reduce((a, b) => a + b, 0)] : [];
+
+
+console.log('-----------');
+
+
+function fakeBin(x){
+  return x.split('').toSpliced(x<5)
+}
+
+console.log((fakeBin('45385593107843568')));
+
+console.log('-----------');
+
+//function removeExclamationMarks(s) {
+   // return s.replace(/!/gi, '');
+  //}
+
+
+  console.log('-----------');
+
+
+function sumMix(x){
+  return x.map(Number).reduce((a,b) => a + b,0);
+}
+// return eval( x.join("+") )
+console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]));
+
+console.log('-----------');
+
+function monkeyCount(n) {
+  count = [];
+  for (i =1; i<=n; i++ ) {
+    count.push(i)
+  }
+    
+  return count
+}
+
+console.log((monkeyCount(5)));
+
+console.log('-----------');
+
+
+function getAge(inputString){
+  return Number(inputString.slice(0,1));
+}
+// return Number(inputString.split(' ').at(0));
+//  return parseInt(inputString);
+
+console.log((getAge("4 years old")));
+console.log((getAge("9 years old")));
+
+
+console.log('-----------');
+
+
+function getChar(c){
+  return String.fromCharCode(c);
+}
+
+console.log('-----------');
+
+
+
+function binToDec(bin) {
+  return  bin = parseInt(bin, 2);
+
+
+ }
+ console.log(binToDec(['1001001', 73],));
+
+
+ console.log('-----------');
+
+// https://www.codewars.com/kata/57fae964d80daa229d000126/javascript
+
+function remove (str) {
+  
+ if (str.charAt(str.length - 1) === '!') {
+  return str.split('').reverse().join('').replace('!','').split('').reverse().join('');
+ } else {
+  return str
+ }
+
+}
+// return s.replace( /!$/, '') 
+// return str.charAt(str.length - 1) === '!' ? str.split('').reverse().join('').replace('!','').split('').reverse().join('') : str;
+//  return s.endsWith('!') ? s.slice(0, -1) : s;
+//  return s[s.length - 1] == '!' ? s.slice(0, -1) : s;
+
+		console.log(remove("Hi!!!"));
+		console.log(remove("!Hi"));
+		console.log(remove("!Hi!"));
+		console.log(remove("Hi! Hi!"));
+		console.log(remove("Hi"));
+
+   
+
+  console.log('----------------');
+  
+    
+  function solution(string) {
+    const str = string.toString().split('')
+    let sum = 0;
+   for (i=0; i<str.length; i++) {
+          if (str[i] === str[i].toUpperCase()) {
+            sum = i
+          }
+   }
+        return sum;
+
+  }
+
+
+  console.log(solution("camelCasing"))       //, "camel Casing");
+  console.log(solution("camelCasingTest"))  //, "camel Casing Test",);
+
+
+  console.log('----------------');
+
+
+
+  
