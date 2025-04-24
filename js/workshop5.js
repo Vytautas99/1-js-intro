@@ -337,7 +337,7 @@ console.log('----------');
 
 let lobis = 150;
 
-for (let i = 20; i >= 15; i--) {
+for (let i = 20; i > 15; i--) {
 
     console.log(lobis-=i);
     
@@ -345,3 +345,285 @@ for (let i = 20; i >= 15; i--) {
 }
 
 
+console.log('----------');
+
+
+
+                                        //Funckijos
+
+//1. Parašykite funkciją, kuri grąžina dviejų skaičių sumą.
+
+const func = (a, b) => a + b;
+
+
+console.log(func(9,90));
+
+console.log('----------');
+
+//2. Parašykite funkciją, kuri grąžina dviejų skaičių skirtumą.
+
+const func2 = (a, b) => b-a;
+
+
+console.log(func2(9,90));
+
+console.log('----------');
+
+//3. Parašykite funkciją, kuri grąžina dviejų skaičių sandaugą.
+
+const func3 = (a, b) => b*a;
+
+console.log(func3(9,90));
+
+console.log('----------');
+
+//4. Parašykite funkciją, kuri grąžina dviejų skaičių dalybą.
+
+const func4 = (a, b) => b/a;
+
+
+console.log(func4(9,90));
+
+console.log('----------');
+
+//5. Parašykite funkciją, kuri grąžina dviejų skaičių vidurkį.
+
+const func5 = (a, b) => (a+b)/2;
+
+console.log(func5(9,90));
+
+console.log('----------');
+
+//6. Parašykite funkciją, kuri patikrina, ar skaičius yra teigiamas.
+
+const func6 = a => a>0;
+
+console.log(func6(9));
+
+console.log('----------');
+
+//7. Parašykite funkciją, kuri patikrina, ar skaičius yra lyginis.
+
+const isEven = a => a%2===0? 'even':'odd';
+
+console.log(isEven(9));
+
+console.log('----------');
+
+//8. Parašykite funkciją, kuri patikrina, ar skaičius yra nelyginis.
+
+
+const isOdd = a => a%2!==0?'odd':'even';
+
+console.log(isOdd(9));
+
+console.log('----------');
+
+//9. Parašykite funkciją, kuri patikrina, ar skaičius dalijasi iš 5 be liekanos.
+
+
+const func7 = a => a%5===0;
+
+console.log(func7(5));
+
+console.log('----------');
+
+
+//10. Parašykite funkciją, kuri patikrina, ar skaičius yra lygus 100.
+
+
+const func8 = a => a===100;
+
+console.log(func8(5));
+
+console.log('----------');
+
+//11. Parašykite funkciją, kuri patikrina, ar skaičius yra didesnis nei 10.
+
+
+const func9 = a => a>10;
+
+console.log(func9(5));
+
+console.log('----------');
+
+//12. Parašykite funkciją, kuri grąžina didesnį iš dviejų skaičių.
+
+const func10 = (a,b) => a>b?a:b;
+
+console.log(func10(5,90));
+
+console.log('----------');
+
+//13. Parašykite funkciją, kuri grąžina mažesnį iš dviejų skaičių.
+
+const func11 = (a,b) => a<b?a:b;
+
+console.log(func11(2,3));
+
+console.log('----------');
+
+//14. Parašykite funkciją, kuri patikrina, ar trys skaičiai yra vienodi.
+
+const func12 = (a,b,c) => a===b&&a===c;
+
+console.log(func12(9,5,9));
+
+console.log('----------');
+
+//15. Parašykite funkciją, kuri patikrina, ar du skaičiai yra lygūs.
+
+const func13 = (a,b) => a===b;
+
+console.log(func13(9,9));
+
+console.log('----------');
+
+//16. Parašykite funkciją, kuri patikrina, ar skaičius yra tarp 1 ir 10.
+
+const func14 = a => a>1&&a<10;
+
+console.log(func14(11));
+
+console.log('----------');
+
+//17. Parašykite funkciją, kuri patikrina, ar skaičius yra tarp 50 ir 100.
+
+const func15 = a => a>50&&a<100;
+
+console.log(func15(99));
+
+console.log('----------');
+
+//18. Parašykite funkciją, kuri patikrina, ar skaičius yra neigiamas.
+
+const func16 = a => a<0;
+
+console.log(func16(99));
+
+console.log('----------');
+
+
+//19. Parašykite funkciją, kuri grąžina „Teigiamas“ arba „Neigiamas“ priklausomai nuo
+//skaičiaus, kurį nusiunčiate funkcijai.
+
+const func17 = a => a>0?'Teigiamas':'Neigiamas';
+
+console.log(func17(99));
+
+console.log('----------');
+
+
+//20. Parašykite funkciją, kuri patikrina, ar skaičius yra didesnis nei 18 (pvz., patikrinimas,
+//ar žmogus pilnametis).
+
+const func18 = a => a>18?'Pilnametis':'Nepilnametis';
+
+console.log(func18(240));
+
+console.log('----------');
+
+
+//21. Parašykite funkciją, kuri patikrina, ar perduotas žodis yra „labas“.
+
+const func19 = a => a==='Labas';
+
+console.log(func19("Gucci"));
+
+console.log('----------');
+
+
+//22. Parašykite funkciją, kuri patikrina, ar žodis yra ilgesnis nei 5 simboliai.
+
+const func20 = a => a.length>5;
+
+console.log(func20("Gucci"));
+
+console.log('----------');
+
+
+//23. Parašykite funkciją, kuri grąžina pirmąją perduoto žodžio raidę.
+
+const func21 = a => a[0];
+
+console.log(func21("Gucci"));
+
+console.log('----------');
+
+
+//24. Parašykite funkciją, kuri grąžina paskutinę perduoto žodžio raidę.
+
+const func22 = a => a.at(-1);
+
+console.log(func22("Gucci"));
+
+console.log('----------');
+
+
+//25. Parašykite funkciją, kuri patikrina, ar žodis prasideda raide „A“.
+
+const func23 = a => a.at() === 'A';
+
+console.log(func23("Gucci"));
+
+console.log('----------');
+
+//26. Parašykite funkciją, kuri grąžina žodžio ilgį.
+
+const func24 = a => a.length;
+
+console.log(func24("Gucci"));
+
+console.log('----------');
+
+
+//27. Parašykite funkciją, kuri grąžina „Ilgas“ arba „Trumpas“, priklausomai nuo žodžio
+//ilgio. Ilgas žodis yra 7 simbolių ilgio arba didesnis, o trumpas yra 6 simbolių ilgio arba
+//trumpesnis
+
+const func25 = a => a.length>7?'Ilgas':'Trumpas';
+
+console.log(func25("Gucci"));
+
+console.log('----------');
+
+
+//28. Parašykite funkciją, kuri patikrina, ar du žodžiai yra vienodi.
+
+const func26 = (a,b) => a===b;
+
+console.log(func26("Gucci",'Prada'));
+
+console.log('----------');
+
+
+//29. Parašykite funkciją, kuri grąžina „Diena“ arba „Naktis“, priklausomai nuo perduotos
+//valandos (0–23).
+
+const func27 = a => {
+    const night = [22,23,0,1,2,3,4,5,6]
+    return night.includes(a)? 'Naktis':'Diena';
+}
+console.log(func27(0));
+
+console.log('----------');
+
+
+//30. Parašykite vieną funkciją, kuri patikrina skaičiaus vertę, ir jęi:
+//a. Skaičius yra teigiamas, išveda į console ‘esu teigiamas’
+//b. Skaičius yra neigiamas, išveda į console ‘esu neigiamas’
+//c. Skaičius yra nulis, išveda į console ‘esu nulis’
+//d. Skaičius yra didesnis už 100, išveda ‘didžiulis skaičius’
+//e. Jei skaičius nėra didesnis už 100, išveda ‘esu mažiukas
+
+
+const func28 = a => {
+    if (a===0) return 'skaičius yra nulis';
+    if (a>0 &&a<100) return 'skaičius yra teigiamas';
+    if (a<0) return 'skaičius yra neigiamas';
+    if (a>100)  return 'didžiulis skaičius';
+    if (a===100) return 'mažas skaičius';
+}
+console.log(func28(99));
+
+console.log('----------');
