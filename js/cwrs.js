@@ -1296,21 +1296,6 @@ function removeChar(str){
 
   console.log('------------------');
  
-  function abbrevName(name){
-
-    //return name.replace(' ','.').charAt(indexOf('.'))
-}
-//.toUpperCase().slice(name.indexOf())
-console.log(abbrevName("Sam Harris"));
-
-
-
-
-console.log('------------------');
-
-
-
-
 
 function getSum(a, b)
 { sum = 0;
@@ -1551,5 +1536,454 @@ function remove (str) {
   console.log('----------------');
 
 
+// https://www.codewars.com/kata/5583090cbe83f4fd8c000051
+  function abbrevName(name){
+    return name.toUpperCase().split(' ').reduce((a,b) => a[0]+ '.' + b[0]);
+    }
+// return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+//   return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+// return name.match(/\b\w/g).join('.').toUpperCase()
 
+    console.log(abbrevName("Sam Harris"), "S.H");
+
+
+    console.log('----------------');
+
+
+    function digitize(n) {
+      return String(n).split('').reverse().map(Number);
+    }
+
+    console.log(digitize(35231),[1,3,2,5,3]);
+
+    console.log('----------------');
+    // https://www.codewars.com/kata/57eae65a4321032ce000002d/javascript
+    function fakeBin(x){
+      let result = '';
+      for (const q of x) {
+        if (q < 5) {
+          result+= 0;
+        }
+
+        if (q >= 5) {
+          result+= 1;
+        }
+      } return result;
+
+    }       
+
+    //  return x.split('').map(n => n < 5 ? 0 : 1).join('');
+    //  return x.replace(/\d/g, d => d < 5 ? 0 : 1);
+    //  return x.replace( /[0-4]/g, "0" ).replace( /[5-9]/g, "1" )
+    // (i < 5)? result += '0' : result +='1';
+
+
+    console.log(fakeBin('45385593107843568'), '01011110001100111');
+    
+    console.log('----------------');
+
+    // https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6
+
+    function cockroachSpeed(s) {
+       return Math.floor(s / 0.036);
+    }
+
+
+     console.log('----------------');
+
+    // https://www.codewars.com/kata/5266876b8f4bf2da9b000362
+      
+     function likes(arr) {
+      if(arr.length === 0) {
+          return 'no one likes this';
+      }
+      if(arr.length === 1) {
+          return `${arr[0]} likes this`;
+      }
+      if(arr.length === 2) {
+          return `${arr[0]} and ${arr[1]} like this`;
+      }
+      if(arr.length === 3) {
+          return `${arr[0]}, ${arr[1]} and ${arr[2]} like this`;
+      }
+      if(arr.length >= 4) {
+          return `${arr[0]}, ${arr[1]} and ${arr.length - 2} others like this`;
+      }
+  }
+     
+     console.log(likes([]));  
+     console.log(likes(["Peter"]));
+     console.log(likes(["Jacob", "Alex"]));
+     console.log(likes(["Max", "John", "Mark"]));
+     console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
+/* 
+
+function likes(names) {
+      
+      switch(names.length){
+        case 0: return 'no one likes this';
+        case 1: return `${arr[0]} likes this`;
+        case 2: return `${arr[0]} and ${arr[1]} like this`; 
+        case 3: return `${arr[0]}, ${arr[1]} and ${arr[2]} like this`; 
+        default: return `${arr[0]}, ${arr[1]} and ${arr.length - 2} others like this`;
+      }
+    }
+*/
+     console.log('----------------');
+
+    // https://www.codewars.com/kata/57f222ce69e09c3630000212
+
+     function well(x){
+      q = x.filter(t => t === 'good').length;
+      return q === 0 ? 'Fail!' : q > 2 ? 'I smell a series!' : 'Publish!';
   
+  }
+  
+  /*
+  function well(x) {
+  const count = x.reduce((s, v) => s + (v == 'good'), 0);
+  return count ? count > 2 ? 'I smell a series!' : 'Publish!' : 'Fail!';
+}
+*/
+
+
+    console.log(well(['bad', 'bad', 'bad']))
+    console.log(well(['good', 'bad', 'bad', 'bad', 'bad']))
+    console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']))
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/586c1cf4b98de0399300001d
+
+function combat(health, damage) {
+  return health < damage ? 0 : health - damage;
+} 
+
+// return Math.max(0, health - damage);
+
+console.log(combat(100, 5), 95);
+console.log(combat(92, 8), 84);
+console.log(combat(20, 30), 0, "Health cannot go below 0");
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/55c45be3b2079eccff00010f/javascript
+function order(words){
+    const wrd = words.split(' ');
+    let wrd1 = '',wrd2 = '', wrd3 = '', wrd4 = '',wrd5 = '', wrd6 = '',wrd7 = '', wrd8 = '', wrd9 = '';
+    
+    for (const num of wrd) {
+     if (num.includes('1')) wrd1 += num;
+     if (num.includes('2')) wrd2 += num; 
+     if (num.includes('3')) wrd3 += num; 
+     if (num.includes('4')) wrd4 += num; 
+     if (num.includes('5')) wrd5 += num; 
+     if (num.includes('6')) wrd6 += num; 
+     if (num.includes('7')) wrd7 += num; 
+     if (num.includes('8')) wrd8 += num; 
+     if (num.includes('9')) wrd9 += num; 
+    
+     } return `${wrd1} ${wrd2} ${wrd3} ${wrd4} ${wrd5} ${wrd6} ${wrd7} ${wrd8} ${wrd9}`.trim()
+}
+
+  /*
+  const order = words => words ? words.split(' ').sort((a,b) => a.match(/\d/) - b.match(/\d/)).join(' ') : '';
+  */
+ console.log(order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est")
+ console.log(order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople")
+ console.log(order(""), "", "empty input should return empty string" )
+
+
+
+
+
+ console.log('----------------');
+
+ function solution(s) {
+  return String(s).split('').filter((q,i) => q.toUpperCase() === i)
+
+ // String(s).split('').join(' ')
+}
+
+
+
+console.log(solution(""));
+console.log(solution("camelCasing"));
+console.log(solution("camelCasingTest"));
+
+
+
+
+console.log('----------------');
+
+function gooseFilter (birds) {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  //return birds.filter(q => geese.includes(q)? false: true);
+  let noGoose = [];
+  for (const bird of birds) {
+      if (!geese.includes(bird))  {
+        noGoose.push(bird)
+      } 
+      
+  } return noGoose;
+  
+};
+
+// (bird === "African" || bird === "Roman Tufted" || bird === "Toulouse" || bird === "Pilgrim" || bird === "Steinbacher" )
+
+console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]),["Mallard", "Hook Bill", "Crested", "Blue Swedish"]);
+
+
+console.log(gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]),["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]);
+
+
+console.log(gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]),[]);
+
+console.log('----------------');
+
+function evenn(num2323,pos) {
+  let numbs = []
+  for (let i = num2323.length; i >= pos-1 ; i--) {
+      
+       if (num2323[i] % 2 === 0) {
+        numbs.push(num2323[i])
+        
+       }
+    
+  } return numbs.filter((item, index) => numbs.indexOf(item) === index)
+
+
+}
+console.log(evenn([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))
+console.log(evenn([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2))
+console.log(evenn([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))
+////
+// num.length -pos+1
+
+
+
+console.log('----------------');
+
+
+function pillars(numPill, dist, width) {
+  return numPill > 1 ? (numPill - 2) * width + (numPill - 1) * dist * 100 : 0;
+}
+
+  console.log(pillars(1, 10, 10) , 0);
+ 
+
+  console.log(pillars(2, 20, 25) , 2000);
+
+  console.log(pillars(11, 15, 30) , 15270);
+
+
+console.log('----------------');
+
+function seatsInTheater(nCols, nRows, col, row) {
+  return (nCols-col+1)* (nRows-row);
+}
+
+
+console.log(seatsInTheater(16,11,5,3) , 96)
+
+console.log(seatsInTheater(1,1,1,1) , 0)
+
+console.log(seatsInTheater(13,6,8,3) , 18)
+
+console.log(seatsInTheater(60,100,60,1) , 99)
+
+console.log(seatsInTheater(1000,1000,1000,1000) , 0)
+
+
+
+
+console.log('----------------');
+
+
+
+
+function quadratic(x1, x2){
+  return [1, -(x1+x2), x1*x2];
+}
+
+
+
+    console.log(quadratic( 0,  1), [1, -1,   0]);
+    console.log(quadratic( 1,  1), [1, -2,   1]);
+    console.log(quadratic(-4, -9), [1, 13,  36]);
+    console.log(quadratic(-5, -4), [1,  9,  20]);
+    console.log(quadratic( 4, -9), [1,  5, -36]);
+    console.log(quadratic( 5, -4), [1, -1, -20]);
+
+
+
+console.log('----------------');
+
+
+function drawStairs(n) {
+
+return `${I}\n I\n  I`
+
+}
+     //${w.repeat(1)}\n${w.repeat(2)}\n${w.repeat(3)}\n${w.repeat(4)}\n${w.repeat(5)}`
+
+
+              
+
+ console.log(drawStairs(1),)
+ console.log(drawStairs(3),)
+ console.log(drawStairs(5),)
+
+
+ console.log('----------------');
+
+
+/*
+ var t = typeof x
+ var who = t=="string" ? 'Zach' : t=="number" ? 'Monica' : 'the dog'
+
+ return `Who ate the last cookie? It was ${who}!`
+
+ */
+
+ console.log('----------------');
+
+
+ function sc(floor){
+  if (floor <= 1) return "";
+  if (floor > 6) return 'Aa~ '.repeat(floor-1) + 'Pa!';
+  return 'Aa~ '.repeat(floor-1) + 'Pa! Aa!';  
+  
+ }
+ //return floor <=1 ? "" : floor > 6 ? 'Aa~ '.repeat(floor-1) + 'Pa!' : 'Aa~ '.repeat(floor-1) + 'Pa! Aa!';
+
+//   return 'Aa~ '.repeat(floor-1) + 'Pa!' + (floor<=6 ? ' Aa!': '');
+
+    console.log(sc(2), "Aa~ Pa! Aa!");  
+    console.log(sc(6), "Aa~ Aa~ Aa~ Aa~ Aa~ Pa! Aa!"); 
+    console.log(sc(7), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!"); 
+    console.log(sc(10), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!"); 
+    console.log(sc(1), ""); 
+    console.log(sc(-1), "");   
+
+
+
+    console.log('----------------');
+
+
+    function animal(obj){
+      return `This ${obj.color} ${obj["name"]} has ${obj.legs} legs.`
+    }
+
+
+
+    console.log('----------------');
+
+   function howManydays(month){
+  let n = month;
+  switch (month){
+  case 2: n= 28; break;
+  case 4: n= 30; break; 
+  case 6: n= 30; break; 
+  case 9: n= 30; break; 
+  case 11: n= 30; break;
+  default: n=31; 
+
+  } return n;
+  
+}
+
+/* function howManydays(month){
+  switch (month){
+     case 2: return 28
+     case 4:
+     case 6:
+     case 9:
+     case 11: return 30
+  }
+  return 31
+}
+
+*/
+
+/*
+  if ([1,3,5,7,8,10,12].includes(month)) {
+    return 31;
+  }
+  if ([4,6,9,11].includes(month)) {
+    return 30;
+  }
+  return 28;
+
+  */
+    console.log(howManydays(1),31);
+    console.log(howManydays(2),28);
+    console.log(howManydays(3),31);
+    console.log(howManydays(4),30);
+    console.log(howManydays(12),31);
+
+
+    console.log('----------------');
+
+    function grabDoll(dolls){
+      const bag=[];
+    for (const doll of dolls) {
+      
+      if (doll=== "Hello Kitty" || doll=== "Barbie doll") {
+        bag.push(doll);
+      } else continue;
+      
+      if (bag.length === 3) {
+        break;
+      }
+   }
+        return bag;
+ }
+
+ /*
+ if (!['Hello Kitty', 'Barbie doll'].includes(d)) {
+      continue;
+      */
+
+   console.log(grabDoll(["Mickey Mouse", "Hello Kitty", "Snow white"]), ["Hello Kitty"]);
+   console.log(grabDoll(["Mickey Mouse", "Hello Kitty", "Hello Kitty", "Snow white"]), ["Hello Kitty", "Hello Kitty"]);
+   console.log(grabDoll(["Mickey Mouse", "Hello Kitty", "Hello Kitty", "Barbie doll", "Snow white"]), ["Hello Kitty", "Hello Kitty", "Barbie doll"]);
+   console.log(grabDoll(["Mickey Mouse", "Barbie doll", "Hello Kitty", "Hello Kitty", "Hello Kitty", "Snow white"]), ["Barbie doll", "Hello Kitty", "Hello Kitty"]);
+
+   console.log('----------------');
+
+   const gucci13232 = [ [ 1, 2, 3, 4, 5 ],       
+ [ 5, 6, 7, 8, 9 ],      
+ [ 20, 21, 34, 56, 100 ]  
+]
+
+console.log(Math.min(...gucci13232[0]) + Math.min(...gucci13232[1]) + Math.min(...gucci13232[2]));
+
+
+
+console.log('----------------');
+
+function fiveLine(s){
+ const w = s.trim();
+ return `${w.repeat(1)}\n${w.repeat(2)}\n${w.repeat(3)}\n${w.repeat(4)}\n${w.repeat(5)}`
+}
+
+console.log(fiveLine("  a") , "a\naa\naaa\naaaa\naaaaa");
+console.log(fiveLine("\txy \n") , "xy\nxyxy\nxyxyxy\nxyxyxyxy\nxyxyxyxyxy");
+console.log(fiveLine("           Ok               ") , "Ok\nOkOk\nOkOkOk\nOkOkOkOk\nOkOkOkOkOk");
+
+
+
+
+//console.log(`a\naa\naaa\naaaa\naaaaa`);
+
+
+
+
+
+
+ console.log('----------------');
+
+
+
+

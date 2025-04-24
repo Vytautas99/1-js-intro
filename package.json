@@ -50,6 +50,7 @@
     "forIn": "node --watch ./js/18-for-in.js",
     "workshop": "node --watch ./js/workshop.js",
     "workshop2": "node --watch ./js/workshop2.js",
+    "workshop5": "node --watch ./js/workshop5.js",
     "js": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
