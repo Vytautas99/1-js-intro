@@ -624,6 +624,17 @@ const func28 = a => {
     if (a>100)  return 'didžiulis skaičius';
     if (a===100) return 'mažas skaičius';
 }
-console.log(func28(99));
+console.log(func28(101));
+
+console.log('----------');
+
+
+let sum20 = 1;
+for (let i = 2; i < 5; i++) {
+    sum20+=i*i;
+    
+}
+
+console.log(sum20);
 
 console.log('----------');

@@ -1822,7 +1822,7 @@ console.log('----------------');
 
 function drawStairs(n) {
 
-return `${I}\n I\n  I`
+//return `${I}\n I\n  I`
 
 }
      //${w.repeat(1)}\n${w.repeat(2)}\n${w.repeat(3)}\n${w.repeat(4)}\n${w.repeat(5)}`
@@ -1986,4 +1986,262 @@ console.log(fiveLine("           Ok               ") , "Ok\nOkOk\nOkOkOk\nOkOkOk
 
 
 
+ function isIsogram(str){
+  const strNew = str.toLowerCase();
 
+  strNew.filter()
+
+}
+
+
+
+
+
+
+
+
+function findOdd(A) {
+  let count9 = [];
+  return A.reduce((b,c)=>((b[b.findIndex(d=>d.el===c)]||b[b.push({el:c,count:0})-1]).count++,b),[]);
+    
+  } 
+
+
+
+
+
+console.log(findOdd([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]));
+
+
+
+
+function compressArray(original) {
+ 
+	var compressed = [];
+	// make a copy of the input array
+	var copy = original.slice(0);
+ 
+	// first loop goes over every element
+	for (var i = 0; i < original.length; i++) {
+ 
+		var myCount = 0;	
+		// loop over every element in the copy and see if it's the same
+		for (var w = 0; w < copy.length; w++) {
+			if (original[i] == copy[w]) {
+				// increase amount of times duplicate is found
+				myCount++;
+				// sets item to undefined
+				delete copy[w];
+			}
+		}
+ 
+		if (myCount > 0) {
+			var a = new Object();
+			a.value = original[i];
+			a.count = myCount;
+			compressed.push(a);
+		}
+	}
+ 
+	return compressed;
+};
+
+
+var testArray = new Array("dog", "dog", "cat", "buffalo", "wolf", "cat", "tiger", "cat");
+var newArray = compressArray(testArray);
+ 
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/5bb904724c47249b10000131
+
+function points(games) {
+  let result = 0;
+ for (const game of games) {
+      if (game[0]>game[2]) result+=3;
+      if (game[0]===game[2]) result+=1;
+      if (game[0]<game[2]) result+=0;
+
+ } return result;
+
+}
+//   return games.map(el => +el[0] > +el[2] ? 3 : +el[0] === +el[2] ? 1 : 0).reduce((a,b)=> a+b, 0)
+
+console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]) , 30);
+console.log(points(["1:1","2:2","3:3","4:4","2:2","3:3","4:4","3:3","4:4","4:4"]) , 10);
+console.log(points(["0:1","0:2","0:3","0:4","1:2","1:3","1:4","2:3","2:4","3:4"]) , 0);
+console.log(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]) , 15);
+console.log(points(["1:0","2:0","3:0","4:4","2:2","3:3","1:4","2:3","2:4","3:4"]) , 12);
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/5556282156230d0e5e000089/javascript
+
+function DNAtoRNA(dna) {
+  return dna.replaceAll('T','U');
+}
+
+console.log(DNAtoRNA("TTTT"), "UUUU")
+
+//  return dna.replace(/T/g, 'U');
+//  return dna.split("T").join("U");
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/55cbd4ba903825f7970000f5/train/javascript
+
+function getGrade (s1, s2, s3) {
+  const s= (s1+s2+s3)/3;
+  return s>=90&&s<=100? 'A': s>=80&&s<90? 'B': s>=70&&s<80? 'C': s>=60&&s<70? 'D':'F';
+}
+
+
+console.log(getGrade(95,90,93), 'A')
+
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/546f922b54af40e1e90001da/javascript
+
+const alphabetEn = "abcdefghijklmnopqrstuvwxyz".split('')
+//console.log(alphabetEn);
+
+Input = "The sunset sets at twelve o' clock."
+Output = "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
+
+function alphabetPosition(games) {
+  const alphabetEn = "abcdefghijklmnopqrstuvwxyz";
+  let result = '';
+  for (i=0;i<games.length;i++) {
+    if (alphabetEn.includes(games.toLowerCase()[i])) {
+       result += ' ' + ((alphabetEn.indexOf(games.toLowerCase()[i]) +1 ));
+       
+      
+    }
+    
+  } return result;
+
+}
+// let alphabetPosition = (text) => text.toUpperCase().replace(/[^A-Z]/g, '').split('').map(ch => ch.charCodeAt(0) - 64).join(' ');
+
+console.log(alphabetPosition("The sunset sets at twelve o' clock."), "**** 20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11");
+console.log(alphabetPosition("The narwhal bacons at midnight."), "**** 20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20");
+
+
+
+ console.log('----------------');
+
+// https://www.codewars.com/kata/568d0dd208ee69389d000016/train/javascript
+
+ function rentalCarCost(d) {
+
+  return d<3? d*40: d>=3&&d<7? (d*40)-20:(d*40)-50;
+
+  } 
+
+
+
+
+
+console.log('----------------');
+
+  console.log(rentalCarCost(1), 40);
+  console.log(rentalCarCost(2), 80);
+  console.log(rentalCarCost(3), 100);
+  console.log(rentalCarCost(4), 140);
+  console.log(rentalCarCost(7), 230);
+  console.log(rentalCarCost(8), 270);
+
+
+  console.log('----------------');
+
+
+  //return dna.replace(/T/g, 'U');
+
+// https://www.codewars.com/kata/554e4a2f232cdd87d9000038
+
+  function dnaStrand(dna){
+    let res= '';
+    for (let i = 0; i < dna.length; i++) {
+
+        if (dna[i]==='A') res+='T';
+        
+        if (dna[i]==='T') res+='A';
+        
+        if (dna[i]==='C') res+='G';
+        
+        if (dna[i]==='G') res+='C';
+        
+      
+    } return res;
+      
+  }
+
+  console.log(dnaStrand("AAAA"),"TTTT","String AAAA is")
+  console.log(dnaStrand("ATTGC"),"TAACG","String ATTGC is")
+  console.log(dnaStrand("GTAT"),"CATA","String GTAT is")
+
+  console.log('----------------');
+
+  // https://www.codewars.com/kata/576b93db1129fcf2200001e6/train/javascript
+
+  function sumArray(ar) {
+    return ar != null && ar.length >2 ? ar.sort((a,b)=>a-b).slice(1, -1).reduce((a,b)=>a+b): 0;
+  } 
+
+
+  console.log(sumArray(null)                     , 0 );
+  console.log(sumArray([ ])                      , 0 );
+  console.log(sumArray([ 3 ])                    , 0 );
+  console.log(sumArray([ 3, 5 ])                 , 0 );
+  console.log(sumArray([ 6, 2, 1, 8, 10 ])       , 16 );
+  console.log(sumArray([ 0, 1, 6, 10, 10 ])      , 17 );
+  console.log(sumArray([ -6, -20, -1, -10, -12 ]), -28 );
+  console.log(sumArray([ -6, 20, -1, 10, -12 ])  , 3 );
+
+  console.log('----------------');
+
+// https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/javascript
+function reverseWords(str) {
+  
+  return str.split('').reverse().join('').split(' ').reverse().join(' ')
+    
+}
+
+/*
+function reverseWords(str) {
+  let reversedWord = '';
+  let reversedStr = '';
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== ' ') {
+      reversedWord = str[i] + reversedWord;
+    } else {
+      reversedStr += reversedWord + ' ';
+      reversedWord = '';
+    }
+  }
+  return reversedStr + reversedWord;
+}
+*/
+    console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
+    console.log(reverseWords('apple'));
+    console.log(reverseWords('a b c d') );
+    console.log(reverseWords('  double  spaced  words  '));
+
+
+    console.log('----------------');
+
+  // https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript
+
+    function filter_list(l) {
+      return l.filter(t => typeof t === 'number');
+    }
+    
+
+
+
+    console.log(filter_list([1,2,'a','b']),[1,2], 'For input [1,2,"a","b"]');
+    console.log(filter_list([1,'a','b',0,15]),[1,0,15], 'For input [1,"a","b",0,15]');
+    console.log(filter_list([1,2,'aasf','1','123',123]),[1,2,123], 'For input [1,2,"aasf","1","123",123]')
+
+    console.log('----------------');
