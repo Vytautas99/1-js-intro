@@ -2245,3 +2245,206 @@ function reverseWords(str) {
     console.log(filter_list([1,2,'aasf','1','123',123]),[1,2,123], 'For input [1,2,"aasf","1","123",123]')
 
     console.log('----------------');
+
+    // https://www.codewars.com/kata/5970df092ef474680a0000c9/train/javascript
+
+    function alphabetized(s) {
+      return s.toLowerCase().localeCompare(s.toLowerCase()) //;split('').sort()
+
+
+    }
+
+
+
+
+
+    console.log(alphabetized('The Holy Bible'), 'BbeehHilloTy')
+
+    console.log('----------------');
+    
+    // https://www.codewars.com/kata/57ae18c6e298a7a6d5000c7a/train/javascript
+
+    function replaceAll(seq, find, replace) {
+      //return typeof seq==='string'? seq.split('').map(a => a===find? a=replace:a).join(''): seq.map(a => a===find? a= replace :a);
+      return typeof seq==='string'? seq.replaceAll(find,replace).join(''): seq.toString().replaceAll(find,replace).split(',').map(Number);
+
+    }
+    
+
+
+    console.log(replaceAll([], 1, 2), []);
+    console.log(replaceAll([1,2,2], 1, 2), [2,2,2]);
+  
+    console.log('----------------');
+
+    // https://www.codewars.com/kata/5aa736a455f906981800360d/train/javascript
+
+    function feast(beast, dish) {
+        return beast[0]===dish[0]&&beast.at(-1)===dish.at(-1);
+        //   return dish.startsWith(beast[0]) && dish.endsWith(beast[beast.length-1])
+        //   return beast.at(0) == dish.at(0) && beast.at(-1) == dish.at(-1)
+    }
+console.log(feast("great blue heron", "garlic naan"), true)
+console.log(feast("chickadee", "chocolate cake"), true)
+console.log(feast("brown bear", "bear claw"), false)
+
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/train/javascript
+
+function validatePIN (pin) {
+ 
+      if (pin.length===4||pin.length===6) {
+        return /^[0-9]+$/.test(pin);
+      }   else return false;
+    }  
+
+
+   
+
+  // return /^\d+$/.test(pin)
+  //  return /^(\d{4}|\d{6})$/.test(pin)
+
+  /*
+  function validatePIN (pin) {
+  //return true or false
+	var n = pin.length;
+  if( n != 4 && n != 6)
+  		return false;
+  for (var i in pin)
+  		if (pin[i] > '9' || pin[i] < '0')
+      		return false;
+  return true;
+}
+  */
+
+/*
+
+function validatePIN (pin) {
+  let num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  let count = 0;
+  let pinArr = pin.split('');
+  for (let i of pinArr) {
+    if (num.includes(i)) {
+      count += 1;
+    } else {
+      return false;
+    }
+  }
+  return count == 4 || count == 6;
+}
+  */
+
+/*
+
+function validatePIN(pin) {
+  const regex = /[^0-9]/; 
+  
+  if ((pin.length === 4 || pin.length === 6) && !regex.test(pin)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+*/
+
+/*
+
+  return pin.split('').some(element => isNaN(parseInt(element))) ? false : pin.length === 4 || pin.length === 6
+  */
+
+ /*
+ function validatePIN (pin) {
+  //return true or false
+  
+    // Check if the length of pin is either 4 or 6
+  if (pin.length !== 4 && pin.length !== 6) {
+    return false;
+  }
+  
+  let result = Array.from(pin).every( p => p >= '0' && p<='9')
+  return result
+  
+}
+*/
+console.log(validatePIN("1234567"),false, "Wrong output for '1234567'")
+console.log(validatePIN("-1234"),false, "Wrong output for '-1234'")
+console.log(validatePIN("123456"),true, "Wrong output for '123456'");
+console.log(validatePIN("098765"),true, "Wrong output for '098765'");
+console.log(validatePIN("-1.234"),false, "Wrong output for '-1.234'")
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/javascript
+
+function removeEveryOther(arr){
+  return arr.filter((t,i)=> i % 2===0);
+  /*const arr2 = [];
+  for (let i = 0; i < arr.length; i++ // i = 0; i < arr.length; i+=2) {
+     if (i%2===0) 
+      arr2.push(arr[i])
+   */ 
+  } 
+
+
+
+    console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']),['Hello', 'Hello Again']);
+    console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),[1, 3, 5, 7, 9]);
+    console.log(removeEveryOther([[1, 2]]), [[1, 2]]);
+    console.log(removeEveryOther([['Goodbye'], {'Great': 'Job'}]),[['Goodbye']]);
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/55ecd718f46fba02e5000029/train/javascript
+
+function between(a, b) {
+  const result = [];
+  for (let i = a; i <= b; i++) {
+    result.push(i);
+    
+
+}   return result;
+}
+
+console.log(between(1, 4), [1, 2, 3, 4]);
+console.log(between(-2, 2), [-2, -1, 0, 1, 2]);
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/56cd44e1aa4ac7879200010b/javascript
+
+String.prototype.isUpperCase = function(text) {
+  return this.toUpperCase() === this.toString();
+}
+
+
+    console.log('hello I AM DONALD'.isUpperCase(), false, 'hello I AM DONALD not is upper case');
+    console.log('HELLO I AM DONALD'.isUpperCase(), true, 'HELLO I AM DONALD is upper case');
+    console.log('ACSKLDFJSgSKLDFJSKLDFJ'.isUpperCase(), false, 'ACSKLDFJSgSKLDFJSKLDFJ not is upper case');
+    console.log('ACSKLDFJSGSKLDFJSKLDFJ'.isUpperCase(), true, 'ACSKLDFJSGSKLDFJSKLDFJ is upper case');
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
+
+function powersOfTwo(n){
+  const result = [];
+
+  for (let i = 0; i <=n; i++) {
+    result.push(2**i)
+    
+  } return result;
+   
+}
+// var powersOfTwo = n => Array.from({length : n + 1}, (val, i) => Math.pow(2, i));
+// const powersOfTwo = n => Array(n + 1).fill(2).map((e, i) => e**i )
+
+
+   console.log(powersOfTwo(0), [1])
+   console.log(powersOfTwo(1), [1, 2])
+   console.log(powersOfTwo(4), [1, 2, 4, 8, 16])
+
+
+console.log('----------------');
