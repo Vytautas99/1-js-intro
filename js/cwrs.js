@@ -2448,3 +2448,117 @@ function powersOfTwo(n){
 
 
 console.log('----------------');
+
+//https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/javascript
+
+/*
+We want to be able to call 'toJadenCase()' directly on a string like so:
+'most trees are blue'.toJadenCase(); // returns 'Most Trees Are Blue'
+For that, we need to add a method to the String prototype:
+*/
+
+function toJadenCase() {
+  //return this.split(' ').map(a=>a[0].toUpperCase() + a.slice(1)).join(' ');
+
+}
+
+
+
+
+  //  function toJadenCase(text) {
+  //   const q = text.split(' ')
+  //   let res = [];
+    
+    
+  //    for (let i = 0; i < q.length; i++) {
+      
+  //      res.push(q[i][0].toUpperCase() + q[i].slice(1).toLowerCase());
+      
+      
+  //    } return res.join(' ');
+  //  }
+
+
+
+
+console.log(toJadenCase("most trees are blue", "Most Trees Are Blue"));
+console.log(toJadenCase("How can mirrors be real if our eyes aren't real"));
+
+
+console.log('----------------');
+
+// https://www.codewars.com/kata/5899642f6e1b25935d000161/train/javascript
+
+function mergeArrays(arr1, arr2) {
+  const arr3= arr1.concat(arr2);
+return arr3.filter((a,i)=> arr3.indexOf(a) === i).sort((a,b)=> a-b);
+
+}
+//  return Array.from(new Set([...arr1,...arr2])).sort((a,b)=>a-b);
+//   return [...new Set([...arr1, ...arr2])].sort((a,b)=>a-b)
+
+
+/*
+function mergeArrays(arr1, arr2) {
+  if (arr1.length == 0 && arr2.length == 0) {
+    return [];
+  }
+  for(let i = 0; i < arr2.length; i++) {
+    if(!arr1.includes(arr2[i])) {
+      arr1.push(arr2[i]);
+    }
+  }
+  return arr1.sort((a, b) => a - b);
+}
+
+
+*/
+
+/*
+
+unction mergeArrays(arr1, arr2) {
+   for (var i = 0; i < arr1.length ; i++) {
+     for (var j = 0; j < arr2.length; j++) {
+       if (arr1[i] === arr2[j]) {
+         arr2.splice(j, 1);
+       }
+     }
+   }
+  var result = arr1.concat(arr2);
+  return  result.sort(function(a, b){return a - b})
+}
+*/
+
+console.log(mergeArrays([1,2,3,4], [5,6,7,8]), [1,2,3,4,5,6,7,8]);
+console.log(mergeArrays([1,3,5,7,9], [10,8,6,4,2]), [1,2,3,4,5,6,7,8,9,10]);
+console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]), [1,2,3,4,5,7,9,10,11,12]);
+
+console.log('----------------');
+
+
+function correct(string){
+
+  return string.replaceAll('0','O').replaceAll('1','I').replaceAll('5','S');
+   
+  
+} 
+
+//s.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S')
+/*
+const corrections = {
+	'5': 'S',
+	'0': 'O',
+  '1': 'I',
+};
+
+const correct = string => (
+	string.replace(/[501]/g, character => corrections[character])
+);
+*/
+console.log('----------------');
+
+    console.log(correct("L0ND0N"),"LONDON");
+    console.log(correct("DUBL1N"),"DUBLIN");
+    console.log(correct("51NGAP0RE"),"SINGAPORE");
+    console.log(correct("BUDAPE5T"),"BUDAPEST");
+    console.log(correct("PAR15"),"PARIS");
