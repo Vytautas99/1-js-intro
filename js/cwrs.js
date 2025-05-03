@@ -2555,10 +2555,57 @@ const correct = string => (
 	string.replace(/[501]/g, character => corrections[character])
 );
 */
-console.log('----------------');
 
     console.log(correct("L0ND0N"),"LONDON");
     console.log(correct("DUBL1N"),"DUBLIN");
     console.log(correct("51NGAP0RE"),"SINGAPORE");
     console.log(correct("BUDAPE5T"),"BUDAPEST");
     console.log(correct("PAR15"),"PARIS");
+
+    console.log('----------------');
+
+
+
+    function sumStr(a,b) {
+  
+      return Number(a) + Number(b) + '';
+
+    }
+
+    //  return String(Number(a)+Number(b));
+    //   return (+a+ +b)+''  
+    console.log(sumStr("4","5"), "9");
+    console.log(sumStr("34","5"), "39");
+    console.log(sumStr("","11"), "11");
+    console.log(sumStr("",""), "0");
+
+
+    console.log('----------------');
+
+
+    // function oddCount(n){
+    //   const arr = [];
+    //   for (let i = 1; i < n; i++) {
+    //       if (i%2===0) {
+    //         arr.push(i);
+    //       }
+        
+    //   } return arr.length;
+
+    // }
+
+    
+    function oddCount(n){
+      
+      return Math.floor(n/2);
+
+    }
+
+    //   return (n%2==0) ? n/2 : (n-1)/2;
+   
+
+
+    console.log(oddCount(15), 7, "Oops! Wrong.");
+    console.log(oddCount(15023), 7511, "Oops! Wrong.");
+
+    console.log('----------------');
